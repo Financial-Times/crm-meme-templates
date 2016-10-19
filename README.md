@@ -1,3 +1,5 @@
-#Templates for MeMe
+#CRM templates and snippets for MeMe
 
-*you can put your naming convention and other procedures to follow here..*
+##Snippets
+All crm snippets should have *crm_* as a prefix
+All snippets should be compatible with the master-template.html
