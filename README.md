@@ -1,5 +1,6 @@
 #CRM templates and snippets for MeMe
 
 ##Snippets
-All crm snippets should have *crm_* as a prefix
-All snippets should be compatible with the master-template.html
+1.All CRM snippets should have *crm_* as a prefix
+
+2.All CRM snippets should be compatible with the master-template.html
