@@ -1,0 +1,25 @@
+<!-- START: Service message header -->
+
+<tr>
+  <td align="left" valign="top" bgcolor="#ffffff">
+    <table role="presentation" width="640" class="responsive-table" cellpadding="0" cellspacing="0" border="0" bgcolor="#333333" align="center" role="presentation">
+      <tr>
+        <td style="padding: 15px 30px 15px 30px;">
+          <h1 style="font-family: arial, sans-serif; color: #ffffff; font-size: 28px; line-height: 28px; margin: 0; font-weight: normal;">Service message</h1>
+        </td>
+      </tr>
+    </table>
+    <table role="presentation" width="640" class="responsive-table" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" align="center" role="presentation" style="border-bottom: 1px dotted #B0B0B0;">
+      <tr>
+        <td style="padding: 0 0 0 20px;" width="45">
+          <img src="https://image.webservices.ft.com/v1/images/raw/fticon-v1:notifications?source=test&width=80&height=80&tint=D0021B,D0021B&format=png" width="40">
+        </td>
+        <td style="padding: 15px 30px 15px 0;">
+          <h3 style="font-family: arial, sans-serif; color: #333333; font-size: 14px; line-height: 17px; margin: 0; font-weight: normal;">This describes the type of service message</h3>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- END: Service message header -->
