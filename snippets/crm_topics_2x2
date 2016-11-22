@@ -1,0 +1,71 @@
+          <!-- START: Article block -->
+
+          <tr>
+            <td>
+              <!--[if (IE)|mso]>
+              <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="640">
+                  <tr>
+                      <td>
+              <![endif]-->
+              <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%">
+                <tr>
+                  <td style="font-size: 0; text-align: center; padding: 30px 30px 30px 30px">
+                    
+                    <!-- Column One -->
+                    <table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="275">
+                      <tr>
+                        <td style="font-size: 16px" align="left">
+                          <a href="#" target="_blank"><img alt="column image" src="https://next-geebee.ft.com/image/v1/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2F873e58c6-9755-11e6-a1dc-bdf38d484582?source=next&fit=scale-down&width=550" border="0" width="275" style="display: block; width: 100%; max-width: 100%; min-width: 100px;"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td bgcolor="#eeeeee" style="text-align: left; padding: 10px 10px 10px 10px;">
+                          <table>
+                            <tr>
+                              <td>
+                                <a href="#" target="_blank" style="color: #2E6E9E; text-decoration: none; font-family: georgia, serif; font-size: 14px; line-height: 17px;">BAT makes $47bn offer to buy out tobacco rival Reynolds</a>
+                              </td>
+                              <td width="30">
+                                <a href="" target="_blank"><img src="https://image.webservices.ft.com/v1/images/raw/fticon-v1:arrow-right?source=test&width=60&height=60&tint=2E6E9E,2E6E9E" width="30"></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+          
+                    <!-- Column Two -->
+                    <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="275">
+                      <tr>
+                        <td style="font-size: 16px" align="left">
+                          <a href="#" target="_blank"><img alt="column image" src="https://next-geebee.ft.com/image/v1/images/raw/http%3A%2F%2Fcom.ft.imagepublish.prod.s3.amazonaws.com%2F5adfb580-9765-11e6-a1dc-bdf38d484582?source=next&fit=scale-down&width=550" border="0" width="275" style="display: block; width: 100%; max-width: 100%; min-width: 100px;"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td bgcolor="#eeeeee" style="text-align: left; padding: 10px 10px 10px 10px;">
+                          <table>
+                            <tr>
+                              <td>
+                                <a href="#" target="_blank" style="color: #2E6E9E; text-decoration: none; font-family: georgia, serif; font-size: 14px; line-height: 17px;">Duterte turns his back on America — and it’s personal</a>
+                              </td>
+                              <td width="30">
+                                <a href="" target="_blank"><img src="https://image.webservices.ft.com/v1/images/raw/fticon-v1:arrow-right?source=test&width=60&height=60&tint=2E6E9E,2E6E9E" width="30"></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                  </td>
+                </tr>
+              </table>
+              <!--[if (IE)|mso]>
+                      </td>
+                  </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+
+          <!-- END: Article block -->
