@@ -1,0 +1,29 @@
+<tr>
+                        <td bgcolor="#FFFFFF">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+                          <tr>
+                            <td bgcolor="#FFFFFF" align="center">
+                             <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="mobile-hide">
+                              <tr>
+                                <td bgcolor="#FFFFFF" class="hmobile-hide"><a href="tbc" target="_blank"><img alt="tbc" title="tbc" border="0" width="640" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=640%C3%97250&w=640&h=200" style="border: 0; display:block"  class="mobile-hide"/></a></td>
+                              </tr>
+                            </table>
+
+                            <!-- Mobile Version --> 
+                            <!--[if !mso]><!-- -->
+                            <div class="show" style="font-size: 0; max-height: 0; overflow: hidden; display: none;">
+
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="show">
+                                <tr>
+                                  <td bgcolor="#FFFFFF" class="show"><a href="tbc" target="_blank"><img alt="tbc" title="tbc" border="0" width="320" src="
+                                    https://placeholdit.imgix.net/~text?txtsize=33&txt=320%C3%97300&w=320&h=300" style="border: 0; display:block; width: 100%;" /></a>
+                                  </td>
+                                </tr>
+                              </table>
+
+                            </div>
+                            <!--<![endif]-->
+                          </td>
+                        </tr>
+                      </table></td>
+                    </tr>
