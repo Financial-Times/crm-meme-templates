@@ -1,0 +1,19 @@
+<!-- CTA -->
+                        <tr>
+                            <td align="center" style="padding: 0 0 30px 0;">
+                                <div align="center">
+                                <table border="0" cellspacing="0" cellpadding="0" bgcolor="#3c85c0" class="wrapto100pc" style="min-width:220px;" role="presentation">
+                                    <tr>
+                                        <td height="35" valign="middle" style="font-family: arial, sans-serif; color:#ffffff; font-size:14px; text-align:center; line-height:16px; padding-left:15px; padding-right:15px; padding-top:5px; padding-bottom:5px; vertical-align:middle;"><a href="tbc" style="color:#ffffff; text-decoration:none;" target="_blank">some CTA text</a>
+                                        </td>
+                                        <td align="right" bgcolor="#3c6eb7" width="35">
+                                            <a href="tbc" target="_blank">
+                                                <img style="display: block;" border="0" src="http://image.email.ft.com/lib/fe9c15707361037d75/m/1/cta-arrow.jpg" width="35" height="35" alt=""/>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                            </td>
+                        </tr>
+				<!-- end CTA -->
