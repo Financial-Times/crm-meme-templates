@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
   <meta charset="utf-8">
   <title>FT</title>
@@ -123,6 +123,14 @@
         height: auto !important;
         max-width: 100% !important;
       }
+      
+              *[class=w320] {
+    width: 320px !important;
+}
+    
+    *[class=w20] {
+    width: 20px !important;
+}
       .footer {
         padding-left: 15px!important;
         padding-right: 15px!important;
@@ -192,16 +200,23 @@
     <content name="snippet text only"></content>
   </div>
 
-  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFF1DF" role="presentation">
-    <tr>
-      <td bgcolor="#FFF1e0" align="center">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#fff1e0">
+  <tr>
+      <td align="center" valign="top"></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0" width="660" align="center"><tr><td><![endif]-->
+      
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="wrapto640px" align="center" style="max-width:640px;">
+        <tr>          
+          <td align="center" valign="top">
         <!-- TRACKING -->
         <table role="presentation" style="table-layout: fixed;" class="w320" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
           <tr>
             <td>
               <div align="center">
                 <!--MOVABLE INK TRACKING-->
-		<content name="movable ink tracking only"></content>
+        <content name="movable ink tracking only"></content>
                 <!--MOVABLE INK TRACKING-->
               </div>
             </td>
@@ -230,7 +245,7 @@
                   <tr>
                      <td>
                       <div>
-                      	<content name="content area 1"></content>
+                          <content name="content area 1"></content>
                         <content name="content area 2"></content>
                         <content name="content area 3"></content>
                         <content name="content area 4"></content>
@@ -291,17 +306,30 @@
                                     <tr>
                                       <td>
                                         <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="15" style="font-size:1px; line-height:1px;" width="100%" role="presentation"></td></tr></table>
+                                          
                                         <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="dashedBorder" width="100%" role="presentation">
                                           <tr>
                                             <td class="ft-email-bar bodyPadding" style="text-align: center;font-size: 12px;line-height: 13pt;font-family: Arial, sans-serif;color: #2e6e9e; padding-left:20px; padding-right:20px;">
                                               <a href="{{unsub}}" style="text-decoration: none;color: #2e6e9e;" target="_blank">Unsubscribe</a> | 
                                               <a href="https://registration.ft.com/youraccount/" style="text-decoration: none;color: #2e6e9e;" target="_blank">My Account</a> | 
-                                              <a href="hhttp://help.ft.com/legal/ft-com-terms-and-conditions/#axzz4CCpGNKQ2" style="text-decoration: none;color: #2e6e9e;" target="_blank">T&Cs</a> | 
+                                              <a href="http://help.ft.com/legal/ft-com-terms-and-conditions/#axzz4CCpGNKQ2" style="text-decoration: none;color: #2e6e9e;" target="_blank">T&Cs</a> | 
                                               <a href="http://help.ft.com/legal/financial-times-privacy-policy/#axzz4DXubRsdD" style="text-decoration: none;color: #2e6e9e;" target="_blank">Privacy Policy</a> | 
                                               <a href="http://help.ft.com/help/contact-us/" style="text-decoration: none;color: #2e6e9e;" target="_blank">Contact us</a>
                                               <table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="15" style="font-size:1px; line-height:1px;" width="100%" role="presentation"></td></tr></table>
                                             </td>
                                           </tr>
+                                          </table>   
+                                          <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="dashedBorder" width="100%" role="presentation">
+                                          <tr>
+                                            <td class="ft-email-bar bodyPadding" style="text-align: center;font-size: 12px;line-height: 13pt;font-family: Arial, sans-serif;color: #2e6e9e; padding-left:20px; padding-right:20px;">
+                                                <div>
+                                                <content name="Footer content"></content> 
+                                                </div>    
+                                              </td>
+                                              </tr>
+                                          </table>  
+                                          
+                                          <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="dashedBorder" width="100%" role="presentation">
                                           <tr>
                                             <td align="left" style="font-family: Georgia, serif; font-size: 12px; line-height:15px; color: #585857; text-align: center" valign="top">
                                               If you no longer wish to receive details of products, services and promotional offers from the Financial Times please <a href="{{unsub}}" style="color: #666666; text-decoration: underline;"><font style="color: #666666;">click here</font>.</a>
@@ -342,8 +370,11 @@
                       </tr>
                     </table>
                     <!--END Footer-->
-	          </td>
+              </td>
             </tr>
-        </table>       
+        </table>     
+    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+  </tr>
+</table>
 </body>
 </html>
