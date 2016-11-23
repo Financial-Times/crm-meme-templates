@@ -1,0 +1,87 @@
+<tr>
+                        <td bgcolor="#FFF1E0" align="center">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+                            {{each newsfeed_result}}
+                            {{if loop_index < 1}}
+                            {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                        
+                            <!-- Start: ARTS -->
+
+                            <tr>
+                                <td bgcolor="#ffffff" align="left" valign="top" style="padding-left: 35px; padding-right: 35px; padding-top: 25px;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+                                        <tr>
+                                            <td align="bottom" valign="left" width="10%">
+                                                <font face="Georgia" style="color: #004764; font-size: 22px;"><i>Title</i></font>
+                                            </td>
+
+                                            <td align="bottom" valign="left" style="border-bottom: 1px dashed #c2c2c2;" width="90%" class="hide"></td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>                             
+
+                                   
+
+                                    <table role="presentation"   class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+                                        <tr>
+                                            <td style="font-size: 0; text-align: center; padding: 20px 35px 30px 35px">
+                                              
+                                                <!-- Column One -->
+                                                <table role="presentation"   align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                                                    <tr>
+                                                        <td align="left">
+                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}""></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                      
+                                      {{end}}
+{{end}}
+{{end}}
+                                                <!-- Column Two -->
+                                                <table role="presentation"   align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                                                    {{each newsfeed_result}}
+                 {{if loop_index < 3}}
+                 {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                                                    <tr>
+                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                                                        </td>
+
+                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                                                        
+
+
+                                                    
+                                                                                                                                            {{end}}
+{{end}}
+{{end}}
+                                                    
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (IE)|mso]>
+                                                </td>           
+                                            </tr>
+                                        </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+
+                            <!-- End: ARTS -->
+                                  </table>
+                            </td>
+                        </tr>
