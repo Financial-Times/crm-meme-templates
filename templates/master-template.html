@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
   <meta charset="utf-8">
   <title>FT</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -94,12 +95,12 @@
         width: 0 !important;
       }
       *[class].show {
-      display:block !important; 
-      overflow:visible !important; 
-      float:none !important;  
-      width:100%; 
-      height:auto !important; 
-      max-height: none !important;
+        display: block !important;
+        overflow: visible !important;
+        float: none !important;
+        width: 100%;
+        height: auto !important;
+        max-height: none !important;
       }
       .logo {
         text-align: center;
@@ -126,22 +127,26 @@
       .row.inner {
         padding-top: 0px!important;
       }
-      *[class=wrapto100pc] {
+      .wrapto100pc {
         width: 100% !important;
         height: auto !important;
         max-width: 100% !important;
       }
-      
-    *[class=w320] {
-    width: 320px !important;
-}
-    
-    *[class=w20] {
-    width: 20px !important;
-}
+      .w320 {
+        width: 320px !important;
+      }
+      .w20 {
+        width: 20px !important;
+      }
       .footer {
         padding-left: 15px!important;
         padding-right: 15px!important;
+      }
+      .width100pc {
+        width: 100% !important;
+      }
+      .clearheight {
+        height: auto !important;
       }
     }
     @media screen and (max-width: 420px) {
@@ -155,8 +160,6 @@
         width: 420px!important;
         max-width: 100%!important;
       }
-	  
-	 <content name="extra css"></content> 
     }
     /* FONTS */
     
@@ -178,9 +181,18 @@
       font-weight: 600;
       font-style: normal
     }
-	
   </style>
 
+  <style type="text/css">
+    /* Extra CSS */
+    
+    <content name="extra css"></content>
+    /* Extra CSS mobile */
+    
+    @media screen and (max-width: 660px) {
+      <content name="extra css mobile"></content>
+    }
+  </style>
   <!--[if gte mso 9]>
     <xml>
     <o:OfficeDocumentSettings>
@@ -189,7 +201,6 @@
     </o:OfficeDocumentSettings>
     </xml>
     <![endif]-->
-
   <!--[if mso]>
     <style type="text/css">
     .text-sans-serif {
@@ -200,63 +211,58 @@
     }
     </style>
     <![endif]-->
-
 </head>
+
 
 <body style="margin: 0 !important; padding: 0 !important;">
 
-
   <!-- HIDDEN PREHEADER TEXT -->
-  <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+  <div style="display: none; font-size: 1px; color: #FFF1E0; line-height: 1px; font-family: sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
     <content name="snippet text only"></content>
   </div>
 
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#fff1e0">
-  <tr>
-      <td align="center" valign="top"></td>
-  </tr>
-  <tr>
-    <td align="center" valign="top"><!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0" width="640" align="center"><tr><td><![endif]-->
-      
-      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="wrapto640px" align="center" style="max-width:640px;">
-        <tr>          
-          <td align="center" valign="top">
-        <!-- TRACKING -->
-        <table role="presentation" style="table-layout: fixed;" class="w320" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+      <td align="center" valign="top">
+        <!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0" width="640" align="center"><tr><td><![endif]-->
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="wrapto640px" align="center" style="max-width:640px;">
           <tr>
-            <td>
-              <div align="center">
-                <!--MOVABLE INK TRACKING-->
-        <content name="movable ink tracking only"></content>
-                <!--MOVABLE INK TRACKING-->
-              </div>
-            </td>
-          </tr>
-        </table>
-        <!--END TRACKING -->
-        <table role="presentation" class="responsive-table" width="640" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" role="presentation" style="table-layout: fixed;">
-          <!-- MODULE -->
-          <!-- Title -->
-          <tr>
-            <td class="logo" align="left" valign="top" style="padding: 20px 0 15px 0;" bgcolor="#FFF1e0">
-              <table role="presentation" width="640" class="responsive-table" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFF1E0" align="center" role="presentation">
+            <td align="center" valign="top">
+
+              <!-- TRACKING -->
+              <table role="presentation" style="table-layout: fixed;" class="w320" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td width="420" class="w300" style="font-family:Georgia, 'Times New Roman', Times, serif; font-size:24px; line-height:30px; color:#1e1e1c;">
-                    FINANCIAL TIMES
-                  </td>
-                  <td width="309" class="mobile-hide" valign="bottom" style="font-family:Arial, Helvetica, sans-serif; font-size:9px; line-height:12px; color:#1e1e1c;text-align:right;">
-                    To view online <a href="{{{emailPermalink}}}" target="_blank" style="color:#306f9f; text-decoration:none;"><span style="color:#306f9f;">click here</span></a>.
+                  <td>
+                    <div align="center">
+                      <!--MOVABLE INK TRACKING-->
+                      <content name="movable ink tracking only"></content>
+                      <!--MOVABLE INK TRACKING-->
+                    </div>
                   </td>
                 </tr>
               </table>
-            </td>
-          </tr>
+              <!--END TRACKING -->
 
-          <!-- Sections -->
-                  <tr>
-                     <td>
-                     <table style="table-layout: fixed;" class="w320" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width:640px;">
-                       
+              <table role="presentation" class="responsive-table" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="table-layout: fixed;">
+
+                <!-- Title -->
+                <tr>
+                  <td class="logo" align="left" valign="top" style="padding: 20px 0 15px 0;" bgcolor="#FFF1e0">
+                    <table role="presentation" width="640" class="responsive-table" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFF1E0" align="center">
+                      <tr>
+                        <td width="420" class="w300" style="font-family:Georgia, 'Times New Roman', Times, serif; font-size:24px; line-height:30px; color:#1e1e1c;">FINANCIAL TIMES</td>
+                        <td width="309" class="mobile-hide" valign="bottom" style="font-family:Arial, Helvetica, sans-serif; font-size:9px; line-height:12px; color:#1e1e1c;text-align:right;"> To view online <a href="{{{emailPermalink}}}" target="_blank" style="color:#306f9f; text-decoration:none;"><span style="color:#306f9f;">click here</span></a>. </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- Sections -->
+
+                <tr>
+                  <td width="100%">
+                    <table style="table-layout: fixed; max-width:640px;" class="w320" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
                       <div>
                         <content name="content area 1"></content>
                         <content name="content area 2"></content>
@@ -299,97 +305,114 @@
                         <content name="content area 39"></content>
                         <content name="content area 40"></content>
                       </div>
-                      <!-- end section -->
-                                  
-       				</table>
-                </td>
-            </tr>               
-        </table>
+                    </table>
+
+                  </td>
+                </tr>
+                <!-- Sections -->
+              </table>
 
 
-<!--Footer-->
-                    <table align="center" bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="table-layout: fixed;" width="100%" role="presentation">
-                      <tr>
-                        <td class="footer">
-                          <div align="center">
-                            <table align="center" bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="630" role="presentation">
+              <!-- FOOTER -->
+              <table align="center" bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="table-layout: fixed;" width="100%" role="presentation">
+                <tr>
+                  <td class="footer">
+                    <div align="center">
+                      <table align="center" bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="630" role="presentation">
+                        <tr>
+                          <td class="responsive-table" valign="top" width="630">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
                               <tr>
-                                <td class="responsive-table" valign="top" width="630">
-                                  <table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="15" style="font-size:1px; line-height:1px;" width="100%" role="presentation"></td></tr></table>
-                                  <!-- Legal -->
+                                <td height="15" style="font-size:1px; line-height:1px;" width="100%" role="presentation"></td>
+                              </tr>
+                            </table>
+
+                            <!-- Legal -->
+
+                            <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="dashedBorder" width="100%" role="presentation">
+                              <tr>
+                                <td>
+                                  <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                      <td height="15" style="font-size:1px; line-height:1px;" width="100%" role="presentation"></td>
+                                    </tr>
+                                  </table>
                                   <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="dashedBorder" width="100%" role="presentation">
                                     <tr>
-                                      <td>
-                                        <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="15" style="font-size:1px; line-height:1px;" width="100%" role="presentation"></td></tr></table>
-                                          
-                                        <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="dashedBorder" width="100%" role="presentation">
+                                      <td class="ft-email-bar bodyPadding" style="text-align: center;font-size: 12px;line-height: 13pt;font-family: Arial, sans-serif;color: #2e6e9e; padding-left:20px; padding-right:20px;"><a href="{{unsub}}" style="text-decoration: none;color: #2e6e9e;" target="_blank">Unsubscribe</a> | <a href="https://registration.ft.com/youraccount/" style="text-decoration: none;color: #2e6e9e;" target="_blank">My Account</a> | <a href="http://help.ft.com/legal/ft-com-terms-and-conditions/#axzz4CCpGNKQ2" style="text-decoration: none;color: #2e6e9e;" target="_blank">T&Cs</a> | <a href="http://help.ft.com/legal/financial-times-privacy-policy/#axzz4DXubRsdD" style="text-decoration: none;color: #2e6e9e;" target="_blank">Privacy Policy</a> | <a href="http://help.ft.com/help/contact-us/" style="text-decoration: none;color: #2e6e9e;" target="_blank">Contact us</a>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                           <tr>
-                                            <td class="ft-email-bar bodyPadding" style="text-align: center;font-size: 12px;line-height: 13pt;font-family: Arial, sans-serif;color: #2e6e9e; padding-left:20px; padding-right:20px;">
-                                              <a href="{{unsub}}" style="text-decoration: none;color: #2e6e9e;" target="_blank">Unsubscribe</a> | 
-                                              <a href="https://registration.ft.com/youraccount/" style="text-decoration: none;color: #2e6e9e;" target="_blank">My Account</a> | 
-                                              <a href="http://help.ft.com/legal/ft-com-terms-and-conditions/#axzz4CCpGNKQ2" style="text-decoration: none;color: #2e6e9e;" target="_blank">T&Cs</a> | 
-                                              <a href="http://help.ft.com/legal/financial-times-privacy-policy/#axzz4DXubRsdD" style="text-decoration: none;color: #2e6e9e;" target="_blank">Privacy Policy</a> | 
-                                              <a href="http://help.ft.com/help/contact-us/" style="text-decoration: none;color: #2e6e9e;" target="_blank">Contact us</a>
-                                              <table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="15" style="font-size:1px; line-height:1px;" width="100%" role="presentation"></td></tr></table>
-                                            </td>
+                                            <td height="15" style="font-size:1px; line-height:1px;" width="100%" role="presentation"></td>
                                           </tr>
-                                          </table>   
-                                          <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="dashedBorder" width="100%" role="presentation">
-                                          <tr>
-                                            <td class="ft-email-bar bodyPadding" style="text-align: center;font-size: 12px;line-height: 13pt;font-family: Arial, sans-serif;color: #2e6e9e; padding-left:20px; padding-right:20px;">
-                                                <div>
-                                                <content name="Footer content"></content> 
-                                                </div>    
-                                              </td>
-                                              </tr>
-                                          </table>  
-                                          
-                                          <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="dashedBorder" width="100%" role="presentation">
-                                          <tr>
-                                            <td align="left" style="font-family: Georgia, serif; font-size: 12px; line-height:15px; color: #585857; text-align: center" valign="top">
-                                              If you no longer wish to receive details of products, services and promotional offers from the Financial Times please <a href="{{unsub}}" style="color: #666666; text-decoration: underline;"><font style="color: #666666;">click here</font>.</a>
-                                              <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="10" style="font-size:1px; line-height:1px;" width="100%" role="presentation"></td></tr></table>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td align="left" style="font-family: Georgia, serif; font-size: 12px; line-height:15px; color: #585857; text-align: center" valign="top">
-                                              We use pixels in HTML emails (not in plain text emails) to tell us if the email is opened or links in it are clicked on. The pixel will be deleted if you delete the email. See our <a href="http://www.ft.com/cookiepolicy" style="color: #585857; text-decoration: none;" target="_blank"><span style="color: #585857;"><u>cookie policy</u></span></a> for more information.
-                                              <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td height="10" style="font-size:1px; line-height:1px;" width="100%" role="presentation"></td></tr></table>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td align="left" style="font-family: Georgia, serif; font-size: 12px; line-height: 15px; color: #585857; text-align: center" valign="top">
-                                              &copy; THE FINANCIAL TIMES LTD 2016
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td align="left" style="font-family: Georgia, serif; font-size: 12px; line-height:15px; color: #585857; padding-top: 5px; text-align: center;" valign="top">
-                                              This email was sent by a company owned by Financial Times Group Limited (FT Group), registered office at Number One Southwark Bridge, London SE1 9HL. Registered in England and Wales with company number 879531.
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td></td>
-                                          </tr>
-                                          <tr><td height="10" style="font-size:1px; line-height:1px;" width="100%"></td></tr>
                                         </table>
                                       </td>
+                                    </tr>
+                                  </table>
+                                  <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="dashedBorder" width="100%" role="presentation">
+                                    <tr>
+                                      <td class="ft-email-bar bodyPadding" style="text-align: center;font-size: 12px;line-height: 13pt;font-family: Arial, sans-serif;color: #2e6e9e; padding-left:20px; padding-right:20px;">
+                                        <div>
+                                          <content name="Footer content"></content>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="dashedBorder" width="100%" role="presentation">
+                                    <tr>
+                                      <td align="left" style="font-family: Georgia, serif; font-size: 12px; line-height:15px; color: #585857; text-align: center" valign="top"> If you no longer wish to receive details of products, services and promotional offers from the Financial Times please <a href="{{unsub}}" style="color: #666666; text-decoration: underline;"><font style="color: #666666;">click here</font>.</a>
+                                        <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td height="10" style="font-size:1px; line-height:1px;" width="100%" role="presentation"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" style="font-family: Georgia, serif; font-size: 12px; line-height:15px; color: #585857; text-align: center" valign="top"> We use pixels in HTML emails (not in plain text emails) to tell us if the email is opened or links in it are clicked on. The pixel will be deleted if you delete the email. See our <a href="http://www.ft.com/cookiepolicy" style="color: #585857; text-decoration: none;" target="_blank"><span style="color: #585857;"><u>cookie policy</u></span></a> for more information.
+                                        <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <td height="10" style="font-size:1px; line-height:1px;" width="100%" role="presentation"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" style="font-family: Georgia, serif; font-size: 12px; line-height: 15px; color: #585857; text-align: center" valign="top">&copy; THE FINANCIAL TIMES LTD 2016 </td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" style="font-family: Georgia, serif; font-size: 12px; line-height:15px; color: #585857; padding-top: 5px; text-align: center;" valign="top"> This email was sent by a company owned by Financial Times Group Limited (FT Group), registered office at Number One Southwark Bridge, London SE1 9HL. Registered in England and Wales with company number 879531. </td>
+                                    </tr>
+                                    <tr>
+                                      <td height="10" style="font-size:1px; line-height:1px;" width="100%"></td>
                                     </tr>
                                   </table>
                                 </td>
                               </tr>
                             </table>
-                            <!-- Legal end -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation"><tr><td height="15" style="font-size:1px; line-height:1px;" width="100%"></td></tr></table>
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                    <!--END Footer-->
-              </td>
-            </tr>
-        </table>     
-    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
-  </tr>
-</table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- Legal end -->
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+                        <tr>
+                          <td height="15" style="font-size:1px; line-height:1px;" width="100%"></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <!--END Footer-->
+            </td>
+          </tr>
+        </table>
+
+
+        <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </table>
+
 </body>
+
 </html>
