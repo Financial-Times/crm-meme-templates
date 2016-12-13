@@ -1,7 +1,7 @@
 <!-- START: Article block highlight -->
-
-          <tr>
-            <td>
+         <table style="table-layout: fixed; max-width:640px;" class="responsive-table" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                          <td class="responsive-table" valign="top">
               <!--[if (IE)|mso]>
               <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="640">
                   <tr>
@@ -74,5 +74,5 @@
               <![endif]-->
             </td>
           </tr>
-
+        </table>
           <!-- END: Article block highlight -->
