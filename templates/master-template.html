@@ -61,7 +61,7 @@
         height: 0;
         line-height: 0;
       }
-      *[class~="mobile-hide"] {
+      .mobile-hide {
         display: none !important;
         height: 0 !important;
         margin: 0 !important;
@@ -71,7 +71,7 @@
         visibility: hidden !important;
         width: 0 !important;
       }
-      *[class].show {
+      .show {
         display: block !important;
         overflow: visible !important;
         float: none !important;
@@ -127,7 +127,6 @@
       }
     }
 
-    }
     /* FONTS */
     
     @font-face {
@@ -180,12 +179,11 @@
     <![endif]-->
 </head>
 
-
 <body style="margin: 0 !important; padding: 0 !important;">
 
   <!-- HIDDEN PREHEADER TEXT -->
   <div style="display: none; font-size: 1px; color: #FFF1E0; line-height: 1px; font-family: sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
-    <content name="snippet text only"></content>
+    <content name="preheader text only"></content>
   </div>
 
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#fff1e0">
@@ -218,7 +216,8 @@
                   <td class="logo" align="left" valign="top" style="padding: 20px 0 15px 0;" bgcolor="#FFF1e0">
                     <table role="presentation" width="640" class="responsive-table" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFF1E0" align="center">
                       <tr>
-                        <td width="420" class="w300" style="font-family:Georgia, 'Times New Roman', Times, serif; font-size:24px; line-height:30px; color:#1e1e1c;">FINANCIAL TIMES</td>
+                         <td width="420" class="w300" style="font-family:Georgia, 'Times New Roman', Times, serif; font-size:24px; line-height:30px; color:#1e1e1c;"><a href="http://www.ft.com" target="_blank" style="text-decoration: none; color:#1e1e1c;">FINANCIAL TIMES</a>
+                        </td>
                         <td width="309" class="mobile-hide" valign="bottom" style="font-family:Arial, Helvetica, sans-serif; font-size:9px; line-height:12px; color:#1e1e1c;text-align:right;"> To view online <a href="{{{emailPermalink}}}" target="_blank" style="color:#306f9f; text-decoration:none;"><span style="color:#306f9f;">click here</span></a>. </td>
                       </tr>
                     </table>
@@ -234,46 +233,80 @@
                           <td class="responsive-table" valign="top">
                       <div>
                         <content name="content area 1"></content>
-                        <content name="content area 2"></content>
-                        <content name="content area 3"></content>
-                        <content name="content area 4"></content>
-                        <content name="content area 5"></content>
-                        <content name="content area 6"></content>
-                        <content name="content area 7"></content>
-                        <content name="content area 8"></content>
-                        <content name="content area 9"></content>
-                        <content name="content area 10"></content>
-                        <content name="content area 11"></content>
-                        <content name="content area 12"></content>
-                        <content name="content area 13"></content>
-                        <content name="content area 14"></content>
-                        <content name="content area 15"></content>
-                        <content name="content area 16"></content>
-                        <content name="content area 17"></content>
-                        <content name="content area 18"></content>
-                        <content name="content area 19"></content>
-                        <content name="content area 20"></content>
-                        <content name="content area 21"></content>
-                        <content name="content area 22"></content>
-                        <content name="content area 23"></content>
-                        <content name="content area 24"></content>
-                        <content name="content area 25"></content>
-                        <content name="content area 26"></content>
-                        <content name="content area 27"></content>
-                        <content name="content area 28"></content>
-                        <content name="content area 29"></content>
-                        <content name="content area 30"></content>
-                        <content name="content area 31"></content>
-                        <content name="content area 32"></content>
-                        <content name="content area 33"></content>
-                        <content name="content area 34"></content>
-                        <content name="content area 35"></content>
-                        <content name="content area 36"></content>
-                        <content name="content area 37"></content>
-                        <content name="content area 38"></content>
-                        <content name="content area 39"></content>
-                        <content name="content area 40"></content>
                       </div>
+                      <div>
+                        <content name="content area 2"></content>
+                      </div>
+                      <div>
+                          <content name="content area 3"></content>
+                      </div>
+                      <div>
+                          <content name="content area 4"></content>
+                      </div>	
+                      <div>
+                          <content name="content area 5"></content>
+                      </div> 
+                      <div>
+                          <content name="content area 6"></content>
+                      </div> 
+                      <div>
+                          <content name="content area 7"></content>
+                      </div>
+                      <div>
+                          <content name="content area 8"></content>
+                      </div>
+                      <div>
+                          <content name="content area 9"></content>
+                      </div>  
+                      <div>
+                          <content name="content area 10"></content>
+                      </div>  
+                      <div>
+                          <content name="content area 11"></content>
+                      </div>  
+                      <div>
+                          <content name="content area 12"></content>
+                      </div>  
+                      <div>
+                         <content name="content area 13"></content> 
+                      </div>
+                      <div>
+                          <content name="content area 14"></content>
+                      </div> 
+                      <div>
+                          <content name="content area 15"></content>
+                      </div> 
+                      <div>
+                          <content name="content area 16"></content>
+                      </div> 
+                      <div>
+                           <content name="content area 17"></content>
+                      </div> 
+                      <div>
+                          <content name="content area 18"></content>
+                      </div> 
+                      <div>
+                          <content name="content area 19"></content>
+                      </div>
+                      <div>
+                         <content name="content area 20"></content> 
+                      </div>  
+                      <div>
+                          <content name="content area 21"></content>
+                      </div> 
+                      <div>
+                          <content name="content area 22"></content>
+                      </div>  
+                      <div>
+                          <content name="content area 23"></content>
+                      </div> 
+                      <div>
+                          <content name="content area 24"></content>
+                      </div>
+                      <div>
+                          <content name="content area 25"></content>
+                      </div>  
+                         
                       </td>
                       </tr>
                     </table>
@@ -310,7 +343,12 @@
                                   </table>
                                   <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="dashedBorder" width="100%" role="presentation">
                                     <tr>
-                                      <td class="ft-email-bar bodyPadding" style="text-align: center;font-size: 12px;line-height: 13pt;font-family: Arial, sans-serif;color: #2e6e9e; padding-left:20px; padding-right:20px;"><a href="{{unsub}}" style="text-decoration: none;color: #2e6e9e;" target="_blank">Unsubscribe</a> | <a href="https://registration.ft.com/youraccount/" style="text-decoration: none;color: #2e6e9e;" target="_blank">My Account</a> | <a href="http://help.ft.com/legal/ft-com-terms-and-conditions/#axzz4CCpGNKQ2" style="text-decoration: none;color: #2e6e9e;" target="_blank">T&Cs</a> | <a href="http://help.ft.com/legal/financial-times-privacy-policy/#axzz4DXubRsdD" style="text-decoration: none;color: #2e6e9e;" target="_blank">Privacy Policy</a> | <a href="http://help.ft.com/help/contact-us/" style="text-decoration: none;color: #2e6e9e;" target="_blank">Contact us</a>
+                                      <td class="ft-email-bar bodyPadding" style="text-align: center;font-size: 12px;line-height: 13pt;font-family: Arial, sans-serif;color: #2e6e9e; padding-left:20px; padding-right:20px;">
+                                      <div><content name="unsub choose category"></content> | 
+                                      <a href="https://registration.ft.com/youraccount/" style="text-decoration: none;color: #2e6e9e;" target="_blank">My Account</a> | 
+                                      <a href="http://help.ft.com/legal/ft-com-terms-and-conditions/#axzz4CCpGNKQ2" style="text-decoration: none;color: #2e6e9e;" target="_blank">T&amp;Cs</a> | 
+                                      <a href="http://help.ft.com/legal/financial-times-privacy-policy/#axzz4DXubRsdD" style="text-decoration: none;color: #2e6e9e;" target="_blank">Privacy Policy</a> | 
+                                      <a href="http://help.ft.com/help/contact-us/" style="text-decoration: none;color: #2e6e9e;" target="_blank">Contact us</a>
                                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                           <tr>
                                             <td height="15" style="font-size:1px; line-height:1px;" width="100%" role="presentation"></td>
@@ -321,7 +359,7 @@
                                   </table>
                                   <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="dashedBorder" width="100%" role="presentation">
                                     <tr>
-                                      <td class="ft-email-bar bodyPadding" style="text-align: center;font-size: 12px;line-height: 13pt;font-family: Arial, sans-serif;color: #2e6e9e; padding-left:20px; padding-right:20px;">
+                                      <td class="ft-email-bar bodyPadding"  style="font-family: Georgia, serif; font-size: 12px; line-height: 15px; color: #585857; text-align: center">
                                         <div>
                                           <content name="Footer content"></content>
                                         </div>
@@ -329,15 +367,7 @@
                                     </tr>
                                   </table>
                                   <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" class="dashedBorder" width="100%" role="presentation">
-                                    <tr>
-                                      <td align="left" style="font-family: Georgia, serif; font-size: 12px; line-height:15px; color: #585857; text-align: center" valign="top"> If you no longer wish to receive details of products, services and promotional offers from the Financial Times please <a href="{{unsub}}" style="color: #666666; text-decoration: underline;"><font style="color: #666666;">click here</font>.</a>
-                                        <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                          <tr>
-                                            <td height="10" style="font-size:1px; line-height:1px;" width="100%" role="presentation"></td>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                    </tr>
+                                    
                                     <tr>
                                       <td align="left" style="font-family: Georgia, serif; font-size: 12px; line-height:15px; color: #585857; text-align: center" valign="top"> We use pixels in HTML emails (not in plain text emails) to tell us if the email is opened or links in it are clicked on. The pixel will be deleted if you delete the email. See our <a href="http://www.ft.com/cookiepolicy" style="color: #585857; text-decoration: none;" target="_blank"><span style="color: #585857;"><u>cookie policy</u></span></a> for more information.
                                         <table bgcolor="#FFF1E0" border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -374,9 +404,6 @@
                 </tr>
               </table>
               <!--END Footer-->
-            </td>
-          </tr>
-        </table>
 
 
         <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
