@@ -1,23 +1,12 @@
-	                    <!-- Intro -->
- <tr>
- <td>
- <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;">
- <tr>
-      <td align="center" style="padding: 20px 30px 30px 30px">
-                                <div align="center">
-                                <table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="padding: 20px 30px 30px 30px" class="wrapto100pc" style="min-width:220px;" role="presentation">
-                                    <tr>
-                                        <td class="mobile-padding" align="left" valign="top">
-                                <span style="font-family: Arial, sans-serif; font-size: 14px; line-height: 21px">
-                                    Lorem ipsum dolor est lorem ipsum. Dolor est. <br/><br />
-We've selected some articles for you here, so read on to <strong><a href="tbc"  target="_blank" style="text-decoration:none;color:#306f9f">here</a></strong>, here <strong><a href="tbc"  target="_blank" style="text-decoration:none;color:#306f9f">and here</a></strong> with <strong><a href="tbc" target="_blank" style="text-decoration:none;color:#306f9f">and here</a></strong>, and <strong>
-<a href="tbc"  target="_blank" style="text-decoration:none;color:#306f9f">here too</a></strong>.</span>
-                            </td>
-                        </tr>
-                        </table>
-                        </div>
- </tr>
+<!-- Intro -->
+<table style="table-layout: fixed; max-width:640px;" class="responsive-table" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+      <td style="padding: 30px 30px 30px 30px; font-size: 14px; line-height: 23px; font-family: arial, sans-serif;">
+        <p style="margin-top: 0;">Salutation if needed, use salutation snippet. If another paragraph needed please use p tag. Don't use break tags.</p>
+
+        <p style="margin: 0 0 0 0;">We've selected some articles for you here, so read on to <strong><a href="tbc"  target="_blank" style="text-decoration:none;color:#306f9f">here</a></strong>, here <strong><a href="tbc"  target="_blank" style="text-decoration:none;color:#306f9f">and here</a></strong> with <strong><a href="tbc" target="_blank" style="text-decoration:none;color:#306f9f">and here</a></strong>, and <strong> <a href="tbc"  target="_blank" style="text-decoration:none;color:#306f9f">here too</a></strong>.
+        </p>
+       </td>
+  </tr>
 </table>
-</td>
-</tr>
- <!-- end Intro -->
+<!-- end Intro -->
