@@ -1,0 +1,35 @@
+<!-- START: Quote -->
+                    <table style="table-layout: fixed; max-width:640px;" class="responsive-table" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                      <tr>
+                        <td style="padding: 0 20px 0;">
+                          
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                      <tr>
+                        <td style="padding: 10px 20px;">
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%">
+                            <tr>
+                              <td style="text-align: center">
+                                <a href="tbc" target="_blank"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/588a30586c54ea0018d24d55.png?source=ft-email-manual&width=800&fit=scale-down" width="40"></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="text-align: center; padding: 20px 20px 20px 20px;">
+                                <blockquote style="font-size: 18px; color: #333333; font-style: italic; line-height: 27px; font-family: georgia, serif; margin: 0;">
+                                  ‘Lorem ipsum dolor est.’
+                                </blockquote>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="text-align: center; font-size: 14px; font-family: arial, sans-serif; line-height: 21px; padding-bottom: 30px;">
+                                <a href="tbc" target="_blank" style="color: #2E6E9E; font-weight: bold; text-decoration: none;">FT reader, TBC</a><br>
+                                The FT commennt from TBC <a href="tbc" target="_blank" style="color: #2E6E9E; font-weight: bold; text-decoration: none;">expand on this</a>
+                              </td>
+                            </tr>
+                          </table>  
+                        </td>
+                      </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- END: Quote -->
