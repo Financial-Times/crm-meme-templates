@@ -1,0 +1,80 @@
+<!-- START: Single articles -->
+                    <table style="table-layout: fixed; max-width:640px;" class="responsive-table" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                      <!-- Single article 1 -->
+                      <tr>
+                        <td style="padding: 0px 20px 10px;">
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%" bgcolor="#F6E9D8">
+                            <tr>
+                              <td style="padding: 20px 0 20px 20px;" width="60" class="mobile-hide">
+                                <a href="tbc" target="_blank"><img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=placeholder&w=60&h=60" alt="" style="display: block" border="0" width="60"></a>
+                              </td>
+                              <td style="padding: 20px 20px 20px 20px; font-family: arial, sans-serif; font-size: 14px;">
+                                <a href="tbc" target="_blank" style="text-decoration: none; color: #2E6E9E; font-weight: bold;">Title</a>
+                                <p style="color: #333333; line-height: 16px; margin: 7px 0 0 0">Lorem ipsum dolor</p>
+                              </td>
+                              <td align="right" style="padding: 20px 20px 20px 0;">
+                                <a href="tbc" target="_blank"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/588a33546c54ea0018d24d56.png?source=ft-email-manual" width="30" border="0" alt="" style="display: block;"></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- Single article 2 -->
+                      <tr>
+                        <td style="padding: 10px 20px;">
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%" bgcolor="#F6E9D8">
+                            <tr>
+                              <td style="padding: 20px 0 20px 20px;" width="60" class="mobile-hide">
+                                <a href="tbc" target="_blank"><img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=placeholder&w=60&h=60" border="0" alt="" style="display: block" width="60"></a>
+                              </td>
+                              <td style="padding: 20px 20px 20px 20px; font-family: arial, sans-serif; font-size: 14px;">
+                                <a href="tbc" target="_blank" style="text-decoration: none; color: #2E6E9E; font-weight: bold;">Title</a>
+                                <p style="color: #333333; line-height: 16px; margin: 7px 0 0 0">Lorem ipsum dolor</p>
+                              </td>
+                              <td align="right" style="padding: 20px 20px 20px 0;">
+                                <a href="tbc" target="_blank"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/588a33546c54ea0018d24d56.png?source=ft-email-manual" border="0" width="30" alt="" style="display: block;"></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- Single article 3 -->
+                      <tr>
+                        <td style="padding: 10px 20px;">
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%" bgcolor="#F6E9D8">
+                            <tr>
+                              <td style="padding: 20px 0 20px 20px;" width="60" class="mobile-hide">
+                                <a href="tbc" target="_blank"><img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=placeholder&w=60&h=60" border="0" alt="" style="display: block" width="60"></a>
+                              </td>
+                              <td style="padding: 20px 20px 20px 20px; font-family: arial, sans-serif; font-size: 14px;">
+                                <a href="tbc" target="_blank" style="text-decoration: none; color: #2E6E9E; font-weight: bold;">Title</a>
+                                <p style="color: #333333; line-height: 16px; margin: 7px 0 0 0">Lorem ipsum dolor</p>
+                              </td>
+                              <td align="right" style="padding: 20px 20px 20px 0;">
+                                <a href="tbc" target="_blank"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/588a33546c54ea0018d24d56.png?source=ft-email-manual" width="30" alt="" border="0" style="display: block;"></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- Single article 4 -->
+                      <tr>
+                        <td style="padding: 10px 20px 20px ;">
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="100%" bgcolor="#F6E9D8">
+                            <tr>
+                              <td style="padding: 20px 0 20px 20px;" width="60" class="mobile-hide">
+                                <a href="tbc" target="_blank"><img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=placeholder&w=60&h=60" alt="" border="0" style="display: block" width="60"></a>
+                              </td>
+                              <td style="padding: 20px 20px 20px 20px; font-family: arial, sans-serif; font-size: 14px;">
+                                <a href="tbc" target="_blank" style="text-decoration: none; color: #2E6E9E; font-weight: bold;">Title</a>
+                                <p style="color: #333333; line-height: 16px; margin: 7px 0 0 0">Lorem ipsum dolor</p>
+                              </td>
+                              <td align="right" style="padding: 20px 20px 20px 0;">
+                                <a href="tbc" target="_blank"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/588a33546c54ea0018d24d56.png?source=ft-email-manual" width="30" alt="" style="display: block;" border="0"></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- END: Single articles -->
