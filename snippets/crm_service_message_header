@@ -12,7 +12,7 @@
     <table role="presentation" width="640" class="responsive-table" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" align="center" role="presentation" style="border-bottom: 1px dotted #B0B0B0; min-width: 100%">
       <tr>
         <td style="padding: 0 0 0 20px;" width="45">
-          <img src="https://image.webservices.ft.com/v1/images/raw/fticon-v1:notifications?source=test&width=80&height=80&tint=D0021B,D0021B&format=png" width="40" height="40" style="margin:0; padding:0; border:none; display:block;" border="0" alt="notification" /> 
+          <img src="https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:notifications?source=MeMe&width=80&height=80&tint=D0021B,D0021B&format=png" width="40" height="40" style="margin:0; padding:0; border:none; display:block;" border="0" alt="notification" />
         </td>
         <td style="padding: 15px 30px 15px 0;">
           <h3 style="font-family: arial, sans-serif; color: #333333; font-size: 14px; line-height: 17px; margin: 0; font-weight: normal;">This describes the type of service message</h3>
