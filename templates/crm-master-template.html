@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <style type="text/css">
-    /* General styles */
+    /* CLIENT-SPECIFIC STYLES */
     
     body,
     table,
@@ -24,7 +24,9 @@
     }
     img {
       -ms-interpolation-mode: bicubic;
-    }    
+    }
+    /* RESET STYLES */
+    
 
     /* IOS blue link */
     
@@ -36,10 +38,8 @@
       font-weight: inherit !important;
       line-height: inherit !important;
     }
-  </style>
-
-  <style type="text/css">
     /* control text changed to links by phones */
+    
     @media only screen {
       a[href^="tel"],
       a[href^="sms"] {
@@ -47,102 +47,9 @@
         text-decoration: none;
       }
     }
-  </style>
-
-  <style type="text/css">
-    /*edge case small screen high res - GMAIL*/
-    @media screen and (max-width:320px), (-webkit-min-device-pixel-ratio: 1.25) {
-      u + .body .gmail {
-        width: 100%!important;
-      }
-      u + .body .column2 {
-        width: 100% !important;
-      }
-      u + .body .flex-size {
-        width: 100% !important;
-      }
-    }
-  </style>
-
-  <style type="text/css">
-
-    /*small screen rule1 - GMAIL*/
-    @media screen and (max-width:1160px) {
-      u + .body .gmail {
-        width: 100%!important;
-      }
-      u + .body .column2 {
-        width: calc(50% - 15px) !important;
-      }
-      .wrapto640px {
-        width: 640px!important;
-      }
-    }
-
-    /*small screen rule2 - GMAIL*/
-    @media screen and (max-width:700px) {
-      u + .body .gmail {
-        width: calc(100vw - 250px)!important;
-        float: left;
-      }
-      .wrapto640px {
-        width: 640px !important;
-        float: none;
-      }
-    }
-
-    /*small screen rule3 - GMAIL*/
-    @media screen and (max-width:600px) {
-      u + .body .gmail {
-        max-width: 600px !important;
-      }
-      u + .body .column2 {
-        width: 100% !important;
-      }
-      u + .body .flex-size {
-        width: 100% !important;
-      }
-      .wrapto640px {
-        width: 100% !important;
-      }
-    }
-  </style>
-
-  <style type="text/css">
-    /*Desktop GMAIL + RESET*/
-    @media screen and (min-width: 640px) {  
-      u + .body .column2 {
-        width: calc(50% - 15px) !important;
-      }
-      .w100pc {
-        width: 100% !important;
-        height: auto !important;
-        max-width: 640px !important;
-      }
-    }
-  </style>
-
-  <style type="text/css">
-    /* mobile styles */
-
-    @media screen and (max-width: 640px) {
-      u + .body .column2 {
-        width: 100% !important;
-      }
-      u + .body .flex-size {
-        width: 100% !important;
-      }
-      .w100pc {
-        width: 100% !important;
-        height: auto !important;
-        max-width: 640px !important;
-      }
-      .wrapto640px {
-        width: 100%!important;
-      }
-      .flex-size {
-        width: 100% !important;
-      }
+    /* MEDIA QUERIES */
+    
+    @media screen and (max-width: 660px) {
       .responsive-table {
         width: 100%!important;
       }
@@ -272,7 +179,7 @@
       <td align="center" valign="top">
         <!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0" width="640" align="center"><tr><td><![endif]-->
 
-        <table class="gmail wrapto640px" width="100%" border="0" cellspacing="0" cellpadding="0" class="wrapto640px" align="center" style="max-width:640px;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="wrapto640px" align="center" style="max-width:640px;">
           <tr>
             <td align="center" valign="top">
 
@@ -311,8 +218,8 @@
                 <tr>
                   <td width="100%">
                     <table style="table-layout: fixed; max-width:640px;" class="responsive-table" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr>
-                        <td class="responsive-table" valign="top">
+                        <tr>
+                          <td class="responsive-table" valign="top">
                           <div>
                               <content name="content area 1"></content>
                                             
@@ -364,7 +271,7 @@
                         
                               <content name="content area 25"></content>
                           </div>  
-                        </td>
+                      </td>
                       </tr>
                     </table>
 
