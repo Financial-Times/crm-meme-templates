@@ -8,8 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <style type="text/css">
-    /* CLIENT-SPECIFIC STYLES */
-    
+
     body,
     table,
     td,
@@ -25,11 +24,8 @@
     img {
       -ms-interpolation-mode: bicubic;
     }
-    /* RESET STYLES */
-    
 
     /* IOS blue link */
-    
     a[x-apple-data-detectors] {
       color: inherit !important;
       text-decoration: none !important;
@@ -38,8 +34,8 @@
       font-weight: inherit !important;
       line-height: inherit !important;
     }
+
     /* control text changed to links by phones */
-    
     @media only screen {
       a[href^="tel"],
       a[href^="sms"] {
@@ -47,11 +43,125 @@
         text-decoration: none;
       }
     }
-    /* MEDIA QUERIES */
+
+  </style>
+
+  <style type="text/css">
+    /*edge case small screen high res - GMAIL*/
     
+    @media screen and (max-width: 320px), (-webkit-min-device-pixel-ratio: 1.25) {
+      u + .body .gmail {
+        width: 100%!important;
+      }
+      u + .body .column2 {
+        width: 100% !important;
+      }
+      u + .body .responsive-table {
+        width: 100% !important;
+      }
+    }
+  </style>
+
+  <style type="text/css">
+    @media screen and (max-width: 1160px) {
+      /*small screen rule1 - GMAIL*/
+      
+      u + .body .gmail {
+        width: 100%!important;
+      }
+      u + .body .column2 {
+        width: calc(50% - 15px) !important;
+      }
+      .wrapto640px {
+        width: 640px!important;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      /*small screen rule2 - GMAIL*/
+      
+      u + .body .gmail {
+        width: calc(100vw - 240px)!important;
+        float: left;
+      }
+      .wrapto640px {
+        width: 640px !important;
+        float: none;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      /*small screen rule3 - GMAIL*/
+      
+      u + .body .gmail {
+        max-width: 600px !important;
+      }
+      u + .body .column2 {
+        width: 100% !important;
+      }
+      u + .body .responsive-table {
+        width: 100% !important;
+      }
+      .wrapto640px {
+        width: 100% !important;
+      }
+    }
+  </style>
+
+  <style type="text/css">
+    @media screen and (min-width: 660px) {
+      /*Desktop GMAIL + RESET*/
+      
+      u + .body .column2 {
+        width: calc(50% - 15px) !important;
+      }
+    }
+  </style>
+
+  <style type="text/css">
     @media screen and (max-width: 660px) {
+      /*mobile styles*/
+      
+      u + .body .column2 {
+        width: 100% !important;
+      }
+      u + .body .column3-205 {
+        width: 100% !important;
+        max-width: none!important;
+      }
+      u + .body .column3-190 {
+        width: 100% !important;
+        max-width: none!important;
+      }
+      .w100pc {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 640px !important;
+      }
+      .wrapto640px {
+        width: 100%!important;
+      }
       .responsive-table {
         width: 100%!important;
+        max-width: none !important;
+        min-width: 1px !important;
+        height: auto !important;
+      }
+      .column2 {
+        width: 100%!important;
+        max-width: none !important;
+        min-width: 1px !important;
+        height: auto !important;
+      }
+      .column3-205 {
+        width: 100%!important;
+        max-width: none !important;
+        min-width: 1px !important;
+        height: auto !important;
+      }
+      .column3-190 {
+        width: 100%!important;
+        max-width: none !important;
+        min-width: 1px !important;
+        height: auto !important;
       }
       .mobile-padding {
         padding-left: 15px!important;
@@ -82,7 +192,14 @@
       .logo {
         text-align: center;
       }
-
+      .hero-section.image {
+        text-align: center!important;
+      }
+      .hero-section.image img {
+        padding: 30px 15px 0!important;
+        max-width: 100%!important;
+        box-sizing: border-box!important;
+      }
       .article {
         padding-bottom: 20px!important;
       }
@@ -114,9 +231,9 @@
         height: auto !important;
       }
     }
-
-    /* FONTS */
-    
+  </style>
+  
+  <style type="text/css">
     @font-face {
       src: url("https://next-geebee.ft.com/build/v2/files/o-fonts-assets@1.3.0/FinancierDisplayWeb-Regular.woff?#iefix") format("woff");
       font-family: FinancierDisplayWeb;
@@ -147,6 +264,7 @@
       <content name="extra css mobile"></content>
     }
   </style>
+
   <!--[if gte mso 9]>
     <xml>
     <o:OfficeDocumentSettings>
