@@ -1,58 +1,51 @@
 <table style="table-layout: fixed; max-width:640px;" class="responsive-table" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
-<tr bgcolor="#ffffff">
-  <td align="left" valign="top" bgcolor="#ffffff" style="padding: 30px 0px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="15"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/58500f9b2de3cd001800bee7.png?source=ft-email-manual&width=250&height=250&fit=scale-down" width="15" height="1" alt="" style="display:block"/></td>
-        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                          <tr>
-                            <td align="left" valign="top" style="padding:0px 0px 0px 0px; font-size:0px; line-height:0px;">
-                            {{each newsfeed_result}}
-                            {{if loop_index < 2}}
-                            {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                            <div style="max-width:304px; vertical-align:top; display:inline-block;" class="wrapto100pc">
-                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                  <td width="15" class="mobile-hide"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/58500f9b2de3cd001800bee7.png?source=ft-email-manual&width=250&height=250&fit=scale-down" width="15" height="1" alt="" style="display:block"/></td>
-                                  <td align="left">
-                                  
-
-                                 <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="275">
-                                  <tr>
-                                    <td style="font-size: 16px" align="left">
-                                        
-                                      <a href="{{loop_vars.newsfeed_result.url}}" target="_blank"><img alt="{{loop_vars.newsfeed_result.title}}" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="275" style="display: block; width: 100%; max-width: 100%; min-width: 100px;"></a>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td bgcolor="#eeeeee" style="text-align: left; padding: 10px 10px 10px 10px;">
-                                      <table>
-                                        <tr>
-                                          <td>
-                                            <a href="{{loop_vars.newsfeed_result.url}}" target="_blank" style="color: #2E6E9E; text-decoration: none; font-family: georgia, serif; font-size: 14px; line-height: 17px;">{{loop_vars.newsfeed_result.title}}</a>
-                                          </td>
-                                          <td width="30">
-                                            <a href="{{loop_vars.newsfeed_result.url}}" target="_blank"><img src="https://image.webservices.ft.com/v1/images/raw/fticon-v1:arrow-right?source=test&width=60&height=60&tint=2E6E9E,2E6E9E" width="30"></a>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                    </td>
-                                  </tr>                      
-                                </table>
-	
-                                  </td>
-                                  <td width="15" class="mobile-hide"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/58500f9b2de3cd001800bee7.png?source=ft-email-manual&width=250&height=250&fit=scale-down" width="15" height="1" alt="" style="display:block"/></td>
-                                </tr>
-                              </table>
-                            </div>
-                            <!--[if (gte mso 9)|(IE)]></td><td align="left" valign="top" style="font-size:0px; line-height:0px;"><![endif]-->
-                            {{end}}
-                  		    {{end}}
-                 			{{end}}
+  <tr bgcolor="#ffffff">
+    <td align="left" valign="top" bgcolor="#ffffff" style="padding: 30px 15px 30px 15px;">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="left" valign="top" style="padding:0px 0px 0px 0px; font-size:0px; line-height:0px;">
+            {{each newsfeed_result}}
+            {{if loop_index < 2}}
+            {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+            <div style="max-width:305px; vertical-align:top; display:inline-block;" class="wrapto100pc">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="left" style="padding: 0 15px 0 15px;">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="275">
+                      <tr>
+                        <td style="font-size: 16px" align="left">
+                          <a href="{{loop_vars.newsfeed_result.url}}" target="_blank"><img alt="{{loop_vars.newsfeed_result.title}}" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="275" style="display: block; width: 100%; max-width: 100%; min-width: 100px;"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td bgcolor="#eeeeee" style="text-align: left; padding: 10px 10px 10px 10px;">
+                          <table>
+                            <tr>
+                              <td>
+                                <a href="{{loop_vars.newsfeed_result.url}}" target="_blank" style="color: #2E6E9E; text-decoration: none; font-family: georgia, serif; font-size: 14px; line-height: 17px;">{{loop_vars.newsfeed_result.title}}</a>
                               </td>
-                          </tr>
-                        </table></td>
-        <td width="15"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/58500f9b2de3cd001800bee7.png?source=ft-email-manual&width=250&height=250&fit=scale-down" width="15" height="1" alt="" style="display:block"/></td>
-      </tr>
-    </table></td>
-</tr>
+                              <td width="30">
+                                <a href="{{loop_vars.newsfeed_result.url}}" target="_blank"><img src="https://image.webservices.ft.com/v1/images/raw/fticon-v1:arrow-right?source=test&width=60&height=60&tint=2E6E9E,2E6E9E" width="30"></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            <td align="left" valign="top" style="font-size:0px; line-height:0px;">
+            <![endif]-->
+            {{end}}
+            {{end}}
+            {{end}}
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
 </table>
