@@ -11,4 +11,49 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+	<!-- Client specific style fixes -->
+	<style type="text/css">
+
+		/* iPhone and iPad: overrides the Minimum Font Size */
+		body,
+    table,
+    td,
+    a {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    /* iPhone and iPad: Remove Blue Links on Apple Devices */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    /* iPhone and iPad: text changed to links by phones */
+    @media only screen {
+      a[href^="tel"],
+      a[href^="sms"] {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+
+    /* Outlook: removes extra spacing from table */
+    table,
+    td {
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    /* Explorer: ensures images do not stretch when viewed online */
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+
+	</style>
+
 </head>
