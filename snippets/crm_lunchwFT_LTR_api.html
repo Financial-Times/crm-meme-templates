@@ -1,0 +1,24 @@
+<!-- LTR Lunch with FT -->
+<table width="100%">
+  <tr>
+    {{if freelunch and #freelunch and freelunch[1].images and #freelunch[1].images}}  
+    <td width="50%" class="full image" style="padding: 30px 30px 0 30px;" align="center">
+      <a href="{{{freelunch[1].url}}" target="_blank"><img src="{{{freelunch[1].images[1].url}}}" width="125" style="display: block;" alt="{{{freelunch[1].title}}}"></a>
+    </td>
+    <td width="50%" class="full" style="padding: 30px 30px 0 0; text-align: center;">
+      <table width="100%" style="border-bottom: 1px solid #CEC6B9;">
+
+        <tr>
+          <td>
+            <h3 style="margin-bottom: 0; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px;"><a href="{{{freelunch[1].url}}" target="_blank" style="color: #2E6E9E; text-decoration: none;">Hyeonseo Lee</a></h3>
+            <h4 style="font-size: 21px; line-height: 35px; font-family: Georgia, serif; font-weight: normal; margin: 5px 0 30px 0;"><a href="{{{freelunch[1].url}}" target="_blank" style="color: #333333; text-decoration: none;">{{freelunch[1].title}}</a></h4>        
+          </td>
+        </tr>
+        {{end}}
+         {{end}}
+         {{end}}
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- END: LTR Lunch with FT -->
