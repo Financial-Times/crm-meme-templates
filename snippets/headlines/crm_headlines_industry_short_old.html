@@ -1,0 +1,930 @@
+{{if User_Industry == "Banking"}}
+
+                		<newsfeed query="Banks" limit="4days">
+                       <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+	<tbody>
+		<tr>
+			<td width="100%" style="text-align: center; vertical-align: top; font-size: 0px; padding: 25px 0px 0px;">
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 0px 0px 20px;">
+                        <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+							<tbody>
+								<tr>
+									<td align="left" valign="top" style="padding: 0px 0px 5px; font-family: georgia, serif; color: #000000; font-size: 17px; line-height: 22px; font-weight: bold;">Banking
+								</tr>
+							</tbody>
+						</table>
+                        {{each newsfeed_result}}
+            			{{if loop_index < 1}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+						<tr>
+									<td align="center" valign="top" style="padding: 0px;"><a href="{{loop_vars.newsfeed_result.url}}"><img src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+								</tr>
+						</table>
+                        {{end}}
+                        {{end}}
+                        {{end}}
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			<td  style="text-align: center; vertical-align: top;" width="320"> 
+			<![endif]-->
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 20px 0px 20px;">
+                        {{each newsfeed_result}}
+            			{{if loop_index < 3}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td align="left" valign="middle" style="padding: 8px 0px; font-family: helvetica, arial, sans-serif; color: #333333; font-size: 14px; line-height: 22px;"><a href="{{loop_vars.newsfeed_result.url}}" target="_blank" style="color: #333333; text-decoration: none;">{{loop_vars.newsfeed_result.title}}</a></td>
+									<td width="8" align="right" valign="middle" style="padding: 8px 0px 8px 10px;">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td align="left" valign="top" bgcolor="#9E2F50" style="line-height: 1px; font-size: 1px;"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/6/dart-transparent.png" border="0" width="8" height="18" alt="" style="display: block;" /></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+	
+							</tbody>
+						</table>
+                         {{end}}
+                         {{end}}
+                         {{end}}
+
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                            </newsfeed>
+                       
+                            
+
+                     
+
+                        
+                            {{elseif User_Industry == "Chemicals"}}
+                            
+                            <newsfeed query="energy" limit="2days">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+	<tbody>
+		<tr>
+			<td width="100%" style="text-align: center; vertical-align: top; font-size: 0px; padding: 25px 0px 0px;">
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 0px 0px 20px;">
+                        <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+							<tbody>
+								<tr>
+									<td align="left" valign="top" style="padding: 0px 0px 5px; font-family: georgia, serif; color: #000000; font-size: 17px; line-height: 22px; font-weight: bold;">Chemicals
+								</tr>
+							</tbody>
+						</table>
+                        {{each newsfeed_result}}
+            			{{if loop_index < 1}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+						<tr>
+									<td align="center" valign="top" style="padding: 0px;"><a href="{{loop_vars.newsfeed_result.url}}"><img src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+								</tr>
+						</table>
+                        {{end}}
+                        {{end}}
+                        {{end}}
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			<td  style="text-align: center; vertical-align: top;" width="320"> 
+			<![endif]-->
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 20px 0px 20px;">
+                        {{each newsfeed_result}}
+            			{{if loop_index < 3}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td align="left" valign="middle" style="padding: 8px 0px; font-family: helvetica, arial, sans-serif; color: #333333; font-size: 14px; line-height: 22px;"><a href="{{loop_vars.newsfeed_result.url}}" target="_blank" style="color: #333333; text-decoration: none;">{{loop_vars.newsfeed_result.title}}</a></td>
+									<td width="8" align="right" valign="middle" style="padding: 8px 0px 8px 10px;">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td align="left" valign="top" bgcolor="#9E2F50" style="line-height: 1px; font-size: 1px;"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/6/dart-transparent.png" border="0" width="8" height="18" alt="" style="display: block;" /></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+	
+							</tbody>
+						</table>
+                         {{end}}
+                         {{end}}
+                         {{end}}
+
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                                                        </newsfeed>
+                       
+							{{elseif User_Industry == "Energy/Utilities"}}
+                            
+                            <newsfeed query="energy" limit="2days">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+	<tbody>
+		<tr>
+			<td width="100%" style="text-align: center; vertical-align: top; font-size: 0px; padding: 25px 0px 0px;">
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 0px 0px 20px;">
+                        <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+							<tbody>
+								<tr>
+									<td align="left" valign="top" style="padding: 0px 0px 5px; font-family: georgia, serif; color: #000000; font-size: 17px; line-height: 22px; font-weight: bold;">Energy
+								</tr>
+							</tbody>
+						</table>
+                        {{each newsfeed_result}}
+            			{{if loop_index < 1}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+						<tr>
+									<td align="center" valign="top" style="padding: 0px;"><a href="{{loop_vars.newsfeed_result.url}}"><img src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+								</tr>
+						</table>
+                        {{end}}
+                        {{end}}
+                        {{end}}
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			<td  style="text-align: center; vertical-align: top;" width="320"> 
+			<![endif]-->
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 20px 0px 20px;;">
+                        {{each newsfeed_result}}
+            			{{if loop_index < 3}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td align="left" valign="middle" style="padding: 8px 0px; font-family: helvetica, arial, sans-serif; color: #333333; font-size: 14px; line-height: 22px;"><a href="{{loop_vars.newsfeed_result.url}}" target="_blank" style="color: #333333; text-decoration: none;">{{loop_vars.newsfeed_result.title}}</a></td>
+									<td width="8" align="right" valign="middle" style="padding: 8px 0px 8px 10px;">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td align="left" valign="top" bgcolor="#9E2F50" style="line-height: 1px; font-size: 1px;"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/6/dart-transparent.png" border="0" width="8" height="18" alt="" style="display: block;" /></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+	
+							</tbody>
+						</table>
+                         {{end}}
+                         {{end}}
+                         {{end}}
+
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                            
+                            </newsfeed>
+                     
+                            {{elseif User_Industry == "Financial services"}}
+                            
+                            <newsfeed query="Financial services" limit="2days">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+	<tbody>
+		<tr>
+			<td width="100%" style="text-align: center; vertical-align: top; font-size: 0px; padding: 25px 0px 0px;">
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 20px 0px 20px;">
+                        <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+							<tbody>
+								<tr>
+									<td align="left" valign="top" style="padding: 0px 0px 5px; font-family: georgia, serif; color: #000000; font-size: 17px; line-height: 22px; font-weight: bold;">Financial Services
+								</tr>
+							</tbody>
+						</table>
+                        {{each newsfeed_result}}
+            			{{if loop_index < 1}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+						<tr>
+									<td align="center" valign="top" style="padding: 0px;"><a href="{{loop_vars.newsfeed_result.url}}"><img src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+								</tr>
+						</table>
+                        {{end}}
+                        {{end}}
+                        {{end}}
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			<td  style="text-align: center; vertical-align: top;" width="320"> 
+			<![endif]-->
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 20px 0px 20px;">
+                        {{each newsfeed_result}}
+            			{{if loop_index < 3}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td align="left" valign="middle" style="padding: 8px 0px; font-family: helvetica, arial, sans-serif; color: #333333; font-size: 14px; line-height: 22px;"><a href="{{loop_vars.newsfeed_result.url}}" target="_blank" style="color: #333333; text-decoration: none;">{{loop_vars.newsfeed_result.title}}</a></td>
+									<td width="8" align="right" valign="middle" style="padding: 8px 0px 8px 10px;">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td align="left" valign="top" bgcolor="#9E2F50" style="line-height: 1px; font-size: 1px;"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/6/dart-transparent.png" border="0" width="8" height="18" alt="" style="display: block;" /></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+	
+							</tbody>
+						</table>
+                         {{end}}
+                         {{end}}
+                         {{end}}
+
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                                    
+                            </newsfeed>
+                         
+
+
+                        
+                            {{elseif User_Industry == "Basic resources/mining"}}
+                            
+                            <newsfeed query="industrials" limit="2days">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+	<tbody>
+		<tr>
+			<td width="100%" style="text-align: center; vertical-align: top; font-size: 0px; padding: 25px 0px 0px;">
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 0px 0px 20px;">
+                        <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+							<tbody>
+								<tr>
+									<td align="left" valign="top" style="padding: 0px 0px 5px; font-family: georgia, serif; color: #000000; font-size: 17px; line-height: 22px; font-weight: bold;">Resources & Mining
+								</tr>
+							</tbody>
+						</table>
+                        {{each newsfeed_result}}
+            			{{if loop_index < 1}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+						<tr>
+									<td align="center" valign="top" style="padding: 0px;"><a href="{{loop_vars.newsfeed_result.url}}"><img src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+								</tr>
+						</table>
+                        {{end}}
+                        {{end}}
+                        {{end}}
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			<td  style="text-align: center; vertical-align: top;" width="320"> 
+			<![endif]-->
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 20px 0px 20px;">
+                        {{each newsfeed_result}}
+            			{{if loop_index < 3}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td align="left" valign="middle" style="padding: 8px 0px; font-family: helvetica, arial, sans-serif; color: #333333; font-size: 14px; line-height: 22px;"><a href="{{loop_vars.newsfeed_result.url}}" target="_blank" style="color: #333333; text-decoration: none;">{{loop_vars.newsfeed_result.title}}</a></td>
+									<td width="8" align="right" valign="middle" style="padding: 8px 0px 8px 10px;">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td align="left" valign="top" bgcolor="#9E2F50" style="line-height: 1px; font-size: 1px;"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/6/dart-transparent.png" border="0" width="8" height="18" alt="" style="display: block;" /></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+	
+							</tbody>
+						</table>
+                         {{end}}
+                         {{end}}
+                         {{end}}
+
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                            </newsfeed>
+              
+
+                         
+							{{elseif User_Industry == "Insurance"}}
+                            
+                            <newsfeed query="insurance" limit="2days">
+                           <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+	<tbody>
+		<tr>
+			<td width="100%" style="text-align: center; vertical-align: top; font-size: 0px; padding: 25px 0px 0px;">
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 0px 0px 20px;">
+                        <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+							<tbody>
+								<tr>
+									<td align="left" valign="top" style="padding: 0px 0px 5px; font-family: georgia, serif; color: #000000; font-size: 17px; line-height: 22px; font-weight: bold;">Insurance
+								</tr>
+							</tbody>
+						</table>
+                        {{each newsfeed_result}}
+            			{{if loop_index < 1}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+						<tr>
+									<td align="center" valign="top" style="padding: 0px;"><a href="{{loop_vars.newsfeed_result.url}}"><img src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+								</tr>
+						</table>
+                        {{end}}
+                        {{end}}
+                        {{end}}
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			<td  style="text-align: center; vertical-align: top;" width="320"> 
+			<![endif]-->
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 20px 0px 20px;">
+                        {{each newsfeed_result}}
+            			{{if loop_index < 3}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td align="left" valign="middle" style="padding: 8px 0px; font-family: helvetica, arial, sans-serif; color: #333333; font-size: 14px; line-height: 22px;"><a href="{{loop_vars.newsfeed_result.url}}" target="_blank" style="color: #333333; text-decoration: none;">{{loop_vars.newsfeed_result.title}}</a></td>
+									<td width="8" align="right" valign="middle" style="padding: 8px 0px 8px 10px;">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td align="left" valign="top" bgcolor="#9E2F50" style="line-height: 1px; font-size: 1px;"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/6/dart-transparent.png" border="0" width="8" height="18" alt="" style="display: block;" /></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+	
+							</tbody>
+						</table>
+                         {{end}}
+                         {{end}}
+                         {{end}}
+
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                            </newsfeed>
+                       
+ 
+                         
+                            {{elseif User_Industry == "Comms/publishing/media"}}
+                            
+                            <newsfeed query="media" limit="2days">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+	<tbody>
+		<tr>
+			<td width="100%" style="text-align: center; vertical-align: top; font-size: 0px; padding: 25px 0px 0px;">
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 0px 0px 20px;">
+                        <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+							<tbody>
+								<tr>
+									<td align="left" valign="top" style="padding: 0px 0px 5px; font-family: georgia, serif; color: #000000; font-size: 17px; line-height: 22px; font-weight: bold;">Media
+								</tr>
+							</tbody>
+						</table>
+                        {{each newsfeed_result}}
+            			{{if loop_index < 1}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+						<tr>
+									<td align="center" valign="top" style="padding: 0px;"><a href="{{loop_vars.newsfeed_result.url}}"><img src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+								</tr>
+						</table>
+                        {{end}}
+                        {{end}}
+                        {{end}}
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			<td  style="text-align: center; vertical-align: top;" width="320"> 
+			<![endif]-->
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 20px 0px 20px;">
+                        {{each newsfeed_result}}
+            			{{if loop_index < 3}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td align="left" valign="middle" style="padding: 8px 0px; font-family: helvetica, arial, sans-serif; color: #333333; font-size: 14px; line-height: 22px;"><a href="{{loop_vars.newsfeed_result.url}}" target="_blank" style="color: #333333; text-decoration: none;">{{loop_vars.newsfeed_result.title}}</a></td>
+									<td width="8" align="right" valign="middle" style="padding: 8px 0px 8px 10px;">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td align="left" valign="top" bgcolor="#9E2F50" style="line-height: 1px; font-size: 1px;"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/6/dart-transparent.png" border="0" width="8" height="18" alt="" style="display: block;" /></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+	
+							</tbody>
+						</table>
+                         {{end}}
+                         {{end}}
+                         {{end}}
+
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                            </newsfeed>
+                      
+                            {{elseif User_Industry == "Property"}}
+                           
+                            <newsfeed query="property" limit="2days">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+	<tbody>
+		<tr>
+			<td width="100%" style="text-align: center; vertical-align: top; font-size: 0px; padding: 25px 0px 0px;">
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 0px 0px 20px;">
+                        <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+							<tbody>
+								<tr>
+									<td align="left" valign="top" style="padding: 0px 0px 5px; font-family: georgia, serif; color: #000000; font-size: 17px; line-height: 22px; font-weight: bold;">Property
+								</tr>
+							</tbody>
+						</table>
+                        {{each newsfeed_result}}
+            			{{if loop_index < 1}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+						<tr>
+									<td align="center" valign="top" style="padding: 0px;"><a href="{{loop_vars.newsfeed_result.url}}"><img src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+								</tr>
+						</table>
+                        {{end}}
+                        {{end}}
+                        {{end}}
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			<td  style="text-align: center; vertical-align: top;" width="320"> 
+			<![endif]-->
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 20px 0px 20px;">
+                        {{each newsfeed_result}}
+            			{{if loop_index < 3}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td align="left" valign="middle" style="padding: 8px 0px; font-family: helvetica, arial, sans-serif; color: #333333; font-size: 14px; line-height: 22px;"><a href="{{loop_vars.newsfeed_result.url}}" target="_blank" style="color: #333333; text-decoration: none;">{{loop_vars.newsfeed_result.title}}</a></td>
+									<td width="8" align="right" valign="middle" style="padding: 8px 0px 8px 10px;">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td align="left" valign="top" bgcolor="#9E2F50" style="line-height: 1px; font-size: 1px;"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/6/dart-transparent.png" border="0" width="8" height="18" alt="" style="display: block;" /></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+	
+							</tbody>
+						</table>
+                         {{end}}
+                         {{end}}
+                         {{end}}
+
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                            </newsfeed>
+
+                        
+                            {{elseif User_Industry == "IT/computing"}}
+                            
+                            <newsfeed query="technology" limit="2days">
+                           <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+	<tbody>
+		<tr>
+			<td width="100%" style="text-align: center; vertical-align: top; font-size: 0px; padding: 25px 0px 0px;">
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 0px 0px 20px;">
+                        <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+							<tbody>
+								<tr>
+									<td align="left" valign="top" style="padding: 0px 0px 5px; font-family: georgia, serif; color: #000000; font-size: 17px; line-height: 22px; font-weight: bold;">IT & Computing
+								</tr>
+							</tbody>
+						</table>
+                        {{each newsfeed_result}}
+            			{{if loop_index < 1}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+						<tr>
+									<td align="center" valign="top" style="padding: 0px;"><a href="{{loop_vars.newsfeed_result.url}}"><img src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+								</tr>
+						</table>
+                        {{end}}
+                        {{end}}
+                        {{end}}
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			<td  style="text-align: center; vertical-align: top;" width="320"> 
+			<![endif]-->
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 20px 0px 20px;">
+                        {{each newsfeed_result}}
+            			{{if loop_index < 3}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td align="left" valign="middle" style="padding: 8px 0px; font-family: helvetica, arial, sans-serif; color: #333333; font-size: 14px; line-height: 22px;"><a href="{{loop_vars.newsfeed_result.url}}" target="_blank" style="color: #333333; text-decoration: none;">{{loop_vars.newsfeed_result.title}}</a></td>
+									<td width="8" align="right" valign="middle" style="padding: 8px 0px 8px 10px;">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td align="left" valign="top" bgcolor="#9E2F50" style="line-height: 1px; font-size: 1px;"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/6/dart-transparent.png" border="0" width="8" height="18" alt="" style="display: block;" /></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+	
+							</tbody>
+						</table>
+                         {{end}}
+                         {{end}}
+                         {{end}}
+
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                            </newsfeed>
+							{{elseif User_Industry == "Telecommunications"}}
+                           
+                            <newsfeed query="telecoms" limit="2days">
+                           <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+	<tbody>
+		<tr>
+			<td width="100%" style="text-align: center; vertical-align: top; font-size: 0px; padding: 25px 0px 0px;">
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 0px 0px 20px;">
+                        <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+							<tbody>
+								<tr>
+									<td align="left" valign="top" style="padding: 0px 0px 5px; font-family: georgia, serif; color: #000000; font-size: 17px; line-height: 22px; font-weight: bold;">Telecoms
+								</tr>
+							</tbody>
+						</table>
+                        {{each newsfeed_result}}
+            			{{if loop_index < 1}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+						<tr>
+									<td align="center" valign="top" style="padding: 0px;"><a href="{{loop_vars.newsfeed_result.url}}"><img src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+								</tr>
+						</table>
+                        {{end}}
+                        {{end}}
+                        {{end}}
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			<td  style="text-align: center; vertical-align: top;" width="320"> 
+			<![endif]-->
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 20px 0px 20px;">
+                        {{each newsfeed_result}}
+            			{{if loop_index < 3}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td align="left" valign="middle" style="padding: 8px 0px; font-family: helvetica, arial, sans-serif; color: #333333; font-size: 14px; line-height: 22px;"><a href="{{loop_vars.newsfeed_result.url}}" target="_blank" style="color: #333333; text-decoration: none;">{{loop_vars.newsfeed_result.title}}</a></td>
+									<td width="8" align="right" valign="middle" style="padding: 8px 0px 8px 10px;">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td align="left" valign="top" bgcolor="#9E2F50" style="line-height: 1px; font-size: 1px;"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/6/dart-transparent.png" border="0" width="8" height="18" alt="" style="display: block;" /></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+	
+							</tbody>
+						</table>
+                         {{end}}
+                         {{end}}
+                         {{end}}
+
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                            </newsfeed>
+                        
+                            {{else}}
+
+                          
+                              <newsfeed query="Markets" limit="4days">
+                              <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+	<tbody>
+		<tr>
+			<td width="100%" style="text-align: center; vertical-align: top; font-size: 0px; padding: 25px 0px 0px;">
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 0px 0px 20px;">
+                        <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+							<tbody>
+								<tr>
+									<td align="left" valign="top" style="padding: 0px 0px 5px; font-family: georgia, serif; color: #000000; font-size: 17px; line-height: 22px; font-weight: bold;">Markets
+								</tr>
+							</tbody>
+						</table>
+                        {{each newsfeed_result}}
+            			{{if loop_index < 1}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+						<tr>
+									<td align="center" valign="top" style="padding: 0px;"><a href="{{loop_vars.newsfeed_result.url}}"><img src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+								</tr>
+						</table>
+                        {{end}}
+                        {{end}}
+                        {{end}}
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			<td  style="text-align: center; vertical-align: top;" width="320"> 
+			<![endif]-->
+			<div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+						<td align="left" valign="top" style="padding: 20px 0px 20px;">
+                        {{each newsfeed_result}}
+            			{{if loop_index < 3}}
+                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td align="left" valign="middle" style="padding: 8px 0px; font-family: helvetica, arial, sans-serif; color: #333333; font-size: 14px; line-height: 22px;"><a href="{{loop_vars.newsfeed_result.url}}" target="_blank" style="color: #333333; text-decoration: none;">{{loop_vars.newsfeed_result.title}}</a></td>
+									<td width="8" align="right" valign="middle" style="padding: 8px 0px 8px 10px;">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tbody>
+											<tr>
+												<td align="left" valign="top" bgcolor="#9E2F50" style="line-height: 1px; font-size: 1px;"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/6/dart-transparent.png" border="0" width="8" height="18" alt="" style="display: block;" /></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+	
+							</tbody>
+						</table>
+                         {{end}}
+                         {{end}}
+                         {{end}}
+
+						</td>
+						<td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                            </newsfeed>
+               
+                        
+                        {{end}}
