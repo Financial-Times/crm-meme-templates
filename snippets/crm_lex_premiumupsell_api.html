@@ -1,0 +1,104 @@
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+  <tbody>
+    <tr>
+      <td width="100%" style="text-align: center; vertical-align: top; font-size: 0px; padding: 25px 0px 0px;">
+      <div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+            <td align="left" valign="top" style="padding: 30px 0px 20px;">
+                       
+           
+                         {{if lex}}
+                          {{if #lex > 0 and lex[1].images and #lex[1].images > 0}}
+                <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+                <tr>
+                      <td align="center" valign="top" style="padding: 0px;"><a href="{{{lex[1].url}}}"><img src="{{{lex[1].images[1].url}}}" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+                    </tr>
+                </table>
+                 {{elseif #lex > 1 and lex[2].images and #lex[2].images > 0}}
+                     <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+                    <tr>
+                          <td align="center" valign="top" style="padding: 0px;"><a href="{{{lex[2].url}}}"><img src="{{{lex[2].images[1].url}}}" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+                        </tr>
+                    </table>
+                    {{elseif #lex > 1 and lex[3].images and #lex[3].images > 0}}
+                     <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+                    <tr>
+                          <td align="center" valign="top" style="padding: 0px;"><a href="{{{lex[3].url}}}"><img src="{{{lex[3].images[1].url}}}" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+                        </tr>
+                    </table>
+                    {{elseif #lex > 1 and lex[4].images and #lex[4].images > 0}}
+                     <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+                    <tr>
+                          <td align="center" valign="top" style="padding: 0px;"><a href="{{{lex[4].url}}}"><img src="{{{lex[4].images[1].url}}}" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+                        </tr>
+                    </table>
+                    {{else}}
+                    <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+                    <tr>
+                          <td align="center" valign="top" style="padding: 0px;"><a href="https://www.ft.com/"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/59649e72f375b1001846a239.png?source=ft-email-manual" border="0" width="255" height="150" alt="" style="display: block;" class="wrapto100pc" /></a></td>
+                        </tr>
+                    </table>
+              {{end}}
+                        {{end}}
+                       
+            </td>
+            <td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      <td style="text-align: center; vertical-align: top;" width="320"> 
+      <![endif]-->
+      <div style="width: 295px; display: inline-block; vertical-align: top;" class="wrapto100pc">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+                    <td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+            <td align="left" valign="top" style="padding: 20px 0px 20px;">
+                       
+                         <table width="255" border="0" cellpadding="0" cellspacing="0" class="wrapto100pc">
+              <tbody>
+                <tr>
+                  <td align="left" valign="top" style="font-family:Georgia,serif;font-size:20px;line-height:24px;color:#006a93;font-weight:normal"><em>Lex</em></td>
+                </tr>
+              </tbody>
+            </table>
+                         {{each lex}}
+                        {{if loop_index < 3}}
+                        {{if loop_vars.emerging.images and #loop_vars.emerging.images > 0}}
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td align="left" valign="middle" style="padding: 8px 0px; font-family: helvetica, arial, sans-serif; color: #333333; font-size: 14px; line-height: 22px;"><a href="{{{loop_vars.lex.url}}}" target="_blank" style="color: #333333; text-decoration: none;">{{loop_vars.lex.title}}</a></td>
+                  <td width="8" align="right" valign="middle" style="padding: 8px 0px 8px 10px;">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td align="left" valign="top" style="line-height: 1px; font-size: 1px;"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1%3Aarrow-right?source=email&tint=%23006a93&format=png" border="0" width="25" alt="" style="display: block;" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                </tr>
+  
+              </tbody>
+            </table>
+                         {{end}}
+                         {{end}}
+                         {{end}}
+
+            </td>
+            <td width="20"><img src="http://image.email.ft.com/lib/fe961570716407757c/m/5/sp50x50.gif" width="20" height="1" alt="" style="display: block;" /></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
