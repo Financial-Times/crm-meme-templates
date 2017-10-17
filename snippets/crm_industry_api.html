@@ -1,1205 +1,1102 @@
-						{{if Industry == "Banking"}}
-                        <div>
-                        <table>
-                		<newsfeed query="Banks" limit="4days">
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                			<tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 10px 30px 10px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-                            
-                            {{elseif Industry == "Education/academia"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="Work careers" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-                            {{elseif Industry == "Govt/public service/NGO"}}
-                            <div>
-                           <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="Work careers" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-                            {{elseif Industry == "Chemicals"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="energy" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-							{{elseif Industry == "Energy/Utilities"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="energy" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-                            {{elseif Industry == "Financial services"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="Financial services" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-                            {{elseif Industry == "Aerospace & defence"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="industrials" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-                            {{elseif Industry == "Basic resources/mining"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="industrials" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-							{{elseif Industry == "engineering/construction"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="industrials" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-                            {{elseif Industry == "Transport/logistics"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="industrials" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-							{{elseif Industry == "Insurance"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="insurance" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-                            {{elseif Industry == "Fund/asset management"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="Markets" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-                            {{elseif Industry == "Comms/publishing/media"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="media" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-                            {{elseif Industry == "Property"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="property" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-                            {{elseif Industry == "Food & beverages"}}  
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="retail consumer" limit="2days">
-                              <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>         
-                            {{elseif Industry == "Retail"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="retail consumer" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-                            {{elseif Industry == "Travel & leisure"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="retail consumer" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-                            {{elseif Industry == "IT/computing"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="technology" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-							{{elseif Industry == "Telecommunications"}}
-                            <div>
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <newsfeed query="telecoms" limit="2days">
-                            <tr>
-                                <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                            </div>
-                            {{else}}
-
-                          <div>
-                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                              <newsfeed query="Markets" limit="4days">
-                                 <tr>
-                                   <td>                             
-                                    <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
-                                        <tr>
-                                            <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
-                                              
-                                                <!-- Column One -->
-                                                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 1}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
-                                                        </td>
-                                                    </tr>
-                                                        {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-                                      
-
-                                                <!-- Column Two -->
-                                                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
-                                                 {{each newsfeed_result}}
-            										{{if loop_index < 3}}
-                                                        {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
-                                                    <tr>
-                                                        <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
-                                                            <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
-                                                        </td>
-
-                                                        <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
-                                                            <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
-                                                                <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                         {{end}}
-                                                    {{end}}
-                                                {{end}}
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (IE)|mso]>
-                                                </td>           
-                                            </tr>
-                                        </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            </newsfeed>
-                            </table>
-                        </div>
-                        
-                        {{end}}
+{{if Industry == "Banking"}}
+<div>
+  <table>
+    <newsfeed query="Banks" limit="4days">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+              <tr>
+                <td style="font-size: 0; text-align: center; padding: 20px 10px 30px 10px">
+                  <!-- Column One -->
+                  <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                    {{each newsfeed_result}}
+                    {{if loop_index < 1}}
+                    {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                    <tr>
+                      <td align="left">
+                        <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                      </td>
+                    </tr>
+                    {{end}}
+                    {{end}}
+                    {{end}}
+                  </table>
+                  <!-- Column Two -->
+                  <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                    {{each newsfeed_result}}
+                    {{if loop_index < 3}}
+                    {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                    <tr>
+                      <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                        <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                      </td>
+                      <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                        <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                        <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                        </a>
+                      </td>
+                    </tr>
+                    {{end}}
+                    {{end}}
+                    {{end}}
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!--[if (IE)|mso]>
+          </td>
+        </tr>
+      </table>
+      <![endif]-->
+      </td>
+      </tr>
+    </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Education/academia"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="Work careers" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Govt/public service/NGO"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="Work careers" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Chemicals"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="energy" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Energy/Utilities"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="energy" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Financial services"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="Financial services" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Aerospace & defence"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="industrials" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Basic resources/mining"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="industrials" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "engineering/construction"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="industrials" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Transport/logistics"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="industrials" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Insurance"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="insurance" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Fund/asset management"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="Markets" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Comms/publishing/media"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="media" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Property"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="property" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Food & beverages"}}  
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="retail consumer" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Retail"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="retail consumer" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Travel & leisure"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="retail consumer" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "IT/computing"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="technology" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{elseif Industry == "Telecommunications"}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="telecoms" limit="2days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{else}}
+<div>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <newsfeed query="Markets" limit="4days">
+      <tr>
+        <td>
+          <table role="presentation" class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" class="flex-size" style="max-width: 640px;" width="100%" bgcolor="#ffffff">
+            <tr>
+              <td style="font-size: 0; text-align: center; padding: 20px 0px 30px 0px">
+                <!-- Column One -->
+                <table role="presentation" align="left" class="column lhs" border="0" cellpadding="0" cellspacing="0" class="column" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 1}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><img class="column-image" src="{{loop_vars.newsfeed_result.images[0].url}}" border="0" width="270" style="display: block; color: #333333; font-size: 18px; font-family: sans-serif; width: 270px; max-width: 100%; min-width: 100px;" alt="{{loop_vars.newsfeed_result.title}}"></a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+                <!-- Column Two -->
+                <table role="presentation" align="right" border="0" cellpadding="0" cellspacing="0" class="column rhs" width="270">
+                  {{each newsfeed_result}}
+                  {{if loop_index < 3}}
+                  {{if loop_vars.newsfeed_result.images and #loop_vars.newsfeed_result.images}}
+                  <tr>
+                    <td align="left" valign="middle" style="width: 90%; padding-bottom: 20px; mso-line-height-rule: exactly;">
+                      <a target="_blank" style="text-decoration:none" href="{{loop_vars.newsfeed_result.url}}"><font face="arial" style="font-size: 15px; color: #333; line-height: 18px;">{{loop_vars.newsfeed_result.title}}</font></a>
+                    </td>
+                    <td align="right" valign="middle" style="width: 10%; padding-bottom: 20px;">
+                      <a target="_blank" href="{{loop_vars.newsfeed_result.url}}">
+                      <img src="http://image.email.ft.com/lib/fe961570716407757c/m/7/ft_arrow.jpg" style="width: 9px; height: 16px; display: block; border: 0;" alt="Read the news" />
+                      </a>
+                    </td>
+                  </tr>
+                  {{end}}
+                  {{end}}
+                  {{end}}
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--[if (IE)|mso]>
+        </td>
+      </tr>
+  </table>
+  <![endif]-->
+  </td>
+  </tr>
+  </newsfeed>
+  </table>
+</div>
+{{end}}
