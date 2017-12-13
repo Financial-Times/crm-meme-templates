@@ -12,18 +12,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Fix DPI scaling in Outlook 2007-2013 -->
-    <!--[if gte mso 9]>
-      <xml>
-      <o:OfficeDocumentSettings>
-      <o:AllowPNG/>
-      <o:PixelsPerInch>96</o:PixelsPerInch>
-      </o:OfficeDocumentSettings>
-      </xml>
-    <![endif]-->
+  <!--[if gte mso 9]>
+    <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+  <![endif]-->
 
   <!-- Client specific style fixes -->
   <style type="text/css">
-
+    a {
+      text-decoration: none;
+    }
+    
+    div {
+      box-sizing: border-box;
+    }
     /* iPhone and iPad: overrides the Minimum Font Size */
     body,
     table,
@@ -32,13 +38,10 @@
       -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
     }
-
     /* iPhone and iPad: Remove Blue Links on Apple Devices */
-
     .appleLink a { 
       color:#222222 !important; text-decoration:none !important; 
     }
-
     /* iPhone and iPad: text changed to links by phones */
     @media only screen {
       a[href^="tel"],
@@ -47,26 +50,27 @@
         text-decoration: none;
       }
     }
-
     /* Outlook: removes extra spacing from table */
     table,
     td {
       mso-table-lspace: 0pt;
       mso-table-rspace: 0pt;
     }
-
     /* Explorer: ensures images do not stretch when viewed online */
     img {
       -ms-interpolation-mode: bicubic;
     }
-
+      
+    .two-column {
+      width: 50%;
+    }
+      
   </style>
 
   <!-- Responsive styles -->
   <style type="text/css">
     
     @media screen and (max-width: 660px) {
-
       .mobile-hide {
         display: none !important;
         height: 0 !important;
@@ -86,18 +90,15 @@
         height: auto !important;
         max-height: none !important;
       }
-
       .logo {
         text-align: center;
       }
-
       .responsive-table {
         width: 100%!important;
         min-height: auto!important;
       }
-
       .mobile-overlap {
-        height: 30px!important;
+        height: 20px!important;
       }
 
       /* 
@@ -105,50 +106,52 @@
       All padding classes should begin with: 'p-' 
       followed by where is will apply: 'trbl-'
       followed by the amound of padding in px: '30'
-
       example: 'p-trbl-30'
       */
-
-      /* 15px padding */
-      .p-tb-15 {
-        padding-top: 15px!important;
-        padding-bottom: 15px!important;
+      /* 0 padding */
+      .p-trbl-0 {
+        padding-top: 0!important;
+        padding-right: 0!important;
+        padding-bottom: 0!important;
+        padding-left: 0!important;
       }
 
-      .p-rl-15 {
-        padding-right: 15px!important;
-        padding-left: 15px!important;
+      .p-t-0 {
+        padding-top: 0!important;
       }
 
-      .p-trbl-15 {
-        padding: 15px 15px 15px 15px!important;
+      /* 20px padding */
+      .p-tb-20 {
+        padding-top: 20px!important;
+        padding-bottom: 20px!important;
       }
-
-      /* 30px padding */
-      .p-tb-30 {
-        padding-top: 30px!important;
-        padding-bottom: 30px!important;
+      .p-rl-20 {
+        padding-right: 20px!important;
+        padding-left: 20px!important;
       }
-
-      .p-rl-30 {
-        padding-right: 30px!important;
-        padding-left: 30px!important;
+      .p-trbl-20 {
+        padding: 20px 20px 20px 20px!important;
       }
-
-      .p-trbl-30 {
-        padding: 30px 30px 30px 30px!important;
+      /* 40px padding */
+      .p-tb-40 {
+        padding-top: 40px!important;
+        padding-bottom: 40px!important;
+      }
+      .p-rl-40 {
+        padding-right: 40px!important;
+        padding-left: 40px!important;
+      }
+      .p-trbl-40 {
+        padding: 40px 40px 40px 40px!important;
       }
       
-      .p-t-30 {
-        padding-top: 30px!important;
+      .p-t-40 {
+        padding-top: 40px!important;
       }
-
-      .p-b-30 {
-        padding-bottom: 30px!important;
+      .p-b-40 {
+        padding-bottom: 40px!important;
       }
-
     }
-
   </style>
 
   <!-- include webfonts -->
@@ -172,58 +175,67 @@
       font-weight: 600;
       font-style: normal
     }
-
   </style>
 
   <!-- Webfont styles - should be inline with Origami o-typography -->
   <style type="text/css">
-
     @media screen and (-webkit-min-device-pixel-ratio: 0) {
-
       /* Headline 1 */
       .headline-1 {
         font-family: MetricWebRegular, Arial, sans-serif;
         font-size: 40px;
       }
-
       /* Headline 2 */
       .headline-2 {
         font-family: MetricWebRegular, Arial, sans-serif;
         font-size: 32px;
       }
-
       /* Headline 3 */
       .headline-3 {
         font-family: MetricWebRegular, Arial, sans-serif;
         font-size: 28px;
       }
-
       /* Headline 4 */
       .headline-4 {
         font-family: MetricWebRegular, Arial, sans-serif;
         font-size: 24px;
       }
-
       /* Headline 5 */
       .headline-5 {
         font-family: MetricWebRegular, Arial, sans-serif;
         font-size: 20px;
       }
-
       /* p text */
       .p-text {
         font-family: MetricWebRegular, Arial, sans-serif;
         font-size: 16px;
       }
-
       /* p text bold */
       .p-text-bold {
         font-family: MetricWebSemibold, Arial, sans-serif;
         font-size: 16px;
       }
+    }
+  </style>
 
+  <!--'table display' method classed-->
+  <style type="text/css">
+    .td {
+      display: block;
+    }
+    .table {
+      display: table;
+        width: 100%;
+    }
+    @media screen and (min-width: 640px) {
+    .td {
+      display: table-cell;
+      }
     }
 
+    [owa] .td {
+      display: table-cell;
+    }
   </style>
 
   <!-- Font fallback for clients that do no support webfonts -->
@@ -247,23 +259,31 @@
     </style>
   <![endif]-->
 
+  <!-- Elsewhere list styling for outlook -->
+  <!--[if gte mso 9]>
+  <style>
+    .elsewhere ul li {
+      color: #F2DFCE;
+      border-bottom: none;
+      Margin: 20px 0;
+    }
+    .elsewhere ul li.last {
+      Margin: 20px 0 0 0;
+    }
+  </style>
+  <![endif]-->
+
   <!-- content for email specific css -->
   <style type="text/css">
-
     /* Email specific CSS desktop*/
     <content name="extra css"></content>
-
     /* Email specific CSS mobile */
     @media screen and (max-width: 660px) {
       <content name="extra css mobile"></content>
     }
-
   </style>
-
 </head>
-
 <body style="margin: 0 !important; padding: 0 !important;" class="body">
-
   <!-- TRACKING -->
   <table role="presentation" class="responsive-table" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
     <tr>
@@ -277,19 +297,15 @@
     </tr>
   </table>
   <!--END TRACKING -->
-
-	<!-- Hidden preheader text -->
-	<div style="display: none; font-size: 1px; color: #FFF1E0; line-height: 1px; font-family: sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+  <!-- Hidden preheader text -->
+  <div style="display: none; font-size: 1px; color: #FFF1E0; line-height: 1px; font-family: sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
     <content name="preheader text only"></content>
   </div>
-
   <!-- FT logo area -->
   <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFF1E5">
     <tr>
       <td align="center" valign="top">
-
         <!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0" width="640" align="center" role="presentation"><tr><td><![endif]-->
-
         <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:640px;" role="presentation">
           <tr>
             <td align="left" valign="top" class="responsive-table logo" style="padding: 15px 0 15px 0; font-size:24px; line-height:30px; font-family:Georgia, 'Times New Roman', Times, serif;">
@@ -300,97 +316,117 @@
             </td>
           </tr>
         </table>
-
         <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-
       </td>
     </tr>
   </table>
-
-  <!-- Hero area -->
+  <!-- Full width hero -->
   <div>
-  	
-  	<content name="hero area"></content>
-
+    <content name="Full width hero"></content>
   </div>
   
-
   <!-- Content area -->
-  <table class="content-bg" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFF1E5">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFF1E5">
     <tr>
       <td align="center" valign="top">
-
         <!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0" width="640" align="center"><tr><td><![endif]-->
+
+        <div>
+          <content name="Hero"></content>
+        </div>
 
         <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:640px;" role="presentation" bgcolor="#ffffff">
           <tr>
-            <td class="p-trbl-30" style="padding: 0 40px 40px 40px; padding-top: 0!important;">
-
-            	<div>	
-
-              	<content name="content area 1"></content>
-                <content name="content area 2"></content>
-                <content name="content area 3"></content>
-                <content name="content area 4"></content>
-                <content name="content area 5"></content>
-                <content name="content area 6"></content>
-                <content name="content area 7"></content>
-                <content name="content area 8"></content>
-                <content name="content area 9"></content>
-
+            <td class="p-trbl-20" style="padding: 0 40px 40px;">
+              <div> 
+                
+                <content name="Content area 1"></content>
+                <content name="Content area 2"></content>
+                <content name="Content area 3"></content>
+                <content name="Content area 4"></content>
+                <content name="Content area 5"></content>
+                <content name="Content area 6"></content>
+                <content name="Content area 7"></content>
+                <content name="Content area 8"></content>
+                <content name="Content area 9"></content>
+                <content name="Content area 10"></content>  
+                  
               </div>
+            </td>
+          </tr>
+        </table>
 
+        <div>
+          <content name="Content area with no padding"></content>
+        </div>
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:640px;" role="presentation" bgcolor="#ffffff">
+          <tr>
+            <td class="p-trbl-20" style="padding: 0 40px 40px;">
+              <div> 
+                
+                <content name="Content area 11"></content>
+                <content name="Content area 12"></content>
+                <content name="Content area 13"></content>
+                <content name="Content area 14"></content>
+                <content name="Content area 15"></content>
+                <content name="Content area 16"></content>
+                <content name="Content area 17"></content>
+                <content name="Content area 18"></content>
+                <content name="Content area 19"></content>
+                <content name="Content area 20"></content>  
+                  
+              </div>
             </td>
           </tr>
         </table>
 
         <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
-
       </td>
     </tr>
   </table>
-
   <!-- Footer -->
-  <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" bgcolor="#FFF1E5">
+
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFF1E5">
     <tr>
       <td align="center" valign="top">
 
-        <!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0" width="640" align="center" role="presentation"><tr><td><![endif]-->
+        <div class="footer" style="width: 100%; max-width: 640px; margin: 0 auto; text-align: center; padding: 30px 0; font-size: 12px; line-height: 15px; font-family: arial, sans-serif;">
 
-        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:640px;" role="presentation">
-          <tr>
-            <td class="footer" style="padding: 30px 15px 15px 15px; text-align: center;font-size: 12px; line-height: 13pt; font-family: Arial, sans-serif; color: #2e6e9e;">
-              <div style="display: inline-block;"><content name="unsub choose category"></content></div> |
-              <a href="https://registration.ft.com/youraccount/" style="text-decoration: none;color: #2e6e9e;" target="_blank">My Account</a> |
-              <a href="http://help.ft.com/legal/ft-com-terms-and-conditions/#axzz4CCpGNKQ2" style="text-decoration: none;color: #2e6e9e;" target="_blank">T&amp;Cs</a> |
-              <a href="http://help.ft.com/legal/financial-times-privacy-policy/#axzz4DXubRsdD" style="text-decoration: none;color: #2e6e9e;" target="_blank">Privacy Policy</a> |
-              <a href="http://help.ft.com/help/contact-us/" style="text-decoration: none;color: #2e6e9e;" target="_blank">Contact us</a>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding: 0 15px 0 15px; font-family: Georgia, serif; font-size: 12px; line-height: 15px; color: #585857; text-align: center">
-              <div><content name="Footer content"></content></div>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding: 0 15px 30px 15px; font-family: Georgia, serif; font-size: 12px; line-height: 15px; color: #585857; text-align: center;">
-              <p style="margin: 0 0 10px 0">
-                We use pixels in HTML emails (not in plain text emails) to tell us if the email is opened or links in it are clicked on. The pixel will be deleted if you delete the email. See our <a href="http://www.ft.com/cookiepolicy" style="color: #585857; text-decoration: none;" target="_blank"><span style="color: #585857;"><u>cookie policy</u></span></a> for more information.
-              </p>
-              <p style="margin: 0 0 10px 0">
-                THE FINANCIAL TIMES LTD 2017
-              </p>
-              <p style="margin: 0 0 0 0">
-                This email was sent by a company owned by Financial Times Group Limited (FT Group), registered office at Number One Southwark Bridge, London SE1 9HL. Registered in England and Wales with company number 879531.
-              </p>
-            </td>
-          </tr>
-        </table>
+          <!--[if (gte mso 9)|(IE)]>
+          <table cellspacing="0" cellpadding="0" border="0" width="640" align="center" role="presentation">
+            <tr>
+              <td style="padding: 30px 0 30px 0; text-align: center; font-size: 12px; line-height: 15px; font-family: arial, sans-serif">
+          <![endif]-->
 
-        <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+          <content name="Unsubscribe"></content>
+
+          <a href="http://help.ft.com/legal/ft-com-terms-and-conditions/#axzz4CCpGNKQ2" target="_blank" style=" color: #3A70AF; margin-left: 10px;">T&Cs</a>
+          <!--[if (gte mso 9)|(IE)]>&nbsp;&nbsp;<![endif]-->
+          <a href="http://help.ft.com/legal/financial-times-privacy-policy/#axzz4DXubRsdD" target="_blank" style=" color: #3A70AF; margin-left: 10px;">Privacy policy</a>
+          <!--[if (gte mso 9)|(IE)]>&nbsp;&nbsp;<![endif]-->
+          <a href="http://help.ft.com/help/contact-us/" target="_blank" style=" color: #3A70AF; margin-left: 10px;">Contact us</a>
+
+          <div class="table" style="font-family: georgia; padding-top: 15px;">
+
+            <p class="footer-text">We use pixels in HTML emails (not in plain text emails) to tell us if the email is opened or links in it are clicked on. The pixel will be deleted if you delete the email. See our cookie policy for more information.</p>
+
+            <p class="footer-text">THE FINANCIAL TIMES LTD 2017</p>
+
+            <p class="footer-text">This email was sent by a company owned by Financial Times Group Limited (FT Group), registered office at Number One Southwark Bridge, London SE1 9HL. Registered in England and Wales with company number 879531.</p>
+
+          </div>
+
+          <!--[if (gte mso 9)|(IE)]>
+              </td>
+            </tr>
+          </table>
+          <![endif]--> 
+
+        </div>
 
       </td>
     </tr>
   </table>
-
+  
 </body>
