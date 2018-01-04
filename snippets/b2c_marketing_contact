@@ -1,0 +1,76 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:560px;">
+  <tr>
+    <td style="padding-top: 40px;" width="70">
+      <img src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/59808d359b8e3100182fbd6a.png?source=ft-email-manual" width="50" style="display: block;" alt="Help">
+    </td>
+    <td style="padding-top: 40px;"> 
+      <h4 style="margin: 0 0 5px 0; font-family: arial, sans-serif; font-size: 22px; font-weight: bold;"><span class="text-sans-serif headline-4">Need help with your subscription?</span></h4>
+      <p style="font-family: arial, sans-serif; font-size: 14px; color: #333333; margin: 0; line-height: 23px;">Get in touch with any queries, including delivery or your FT.com access</p>
+    </td>
+  </tr>
+</table>
+
+<table style="table-layout: fixed; max-width:640px;" class="responsive-table" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td width="560" class="responsive-table" style="padding-top: 20px;">
+      <!--[if (gte mso 9)|(IE)]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td valign="top"><![endif]-->
+      <table width="190" class="responsive-table" cellpadding="0" cellspacing="0" border="0" align="left">
+        <tr>
+          <td width="178" class="responsive-table" valign="top" align="center" style="padding-bottom: 10px;">
+
+            <table class="responsive-table" align="center" style="width:178px; margin:0 auto; border: 1px solid #3A70AF;">
+              <tr>
+                <td width="178" style="text-align: center; vertical-align: middle; padding: 12px 0 12px 0;">
+                  <a href="https://help.ft.com" target="_blank" style="text-decoration: none; font-weight: bold; font-size: 14px; font-family: arial, sans-serif; color: #3A70AF;"><span class="text-sans-serif a-text">Help.ft.com</span></a>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+          <td width="10" class="hide"></td>
+        </tr>
+      </table>
+      <!--[if gte mso 9]>
+      </td><td valign="top">
+      <![endif]-->
+      <table width="190" class="responsive-table" cellpadding="0" cellspacing="0" border="0" align="left">
+        <tr>
+          <td width="178" class="responsive-table" valign="top" align="center" style="padding-bottom: 10px;">
+
+            <table class="responsive-table" align="center" style="width:178px; margin:0 auto; border: 1px solid #3A70AF;">
+              <tr>
+                <td width="178" style="text-align: center; vertical-align: middle; padding: 12px 0 12px 0;">
+                  <a href="tel:+448000281407" target="_blank" style="text-decoration: none; font-weight: bold; font-size: 14px; font-family: arial, sans-serif; color: #3A70AF;"><span class="text-sans-serif a-text">+44 (0) 800 028 1407</span></a>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+          <td width="10" class="hide" bgcolor="#FFFFFF"></td>
+        </tr>
+      </table>
+      <!--[if gte mso 9]>
+      </td><td valign="top">
+      <![endif]-->
+      <table width="180" class="responsive-table" cellpadding="0" cellspacing="0" border="0" align="left">
+        <tr>
+          <td width="178" class="responsive-table" valign="top" align="center" style="padding-bottom: 10px;">
+
+            <table class="responsive-table" align="center" style="width:178px; margin:0 auto; border: 1px solid #3A70AF;">
+              <tr>
+                <td width="178" style="text-align: center; vertical-align: middle; padding: 12px 0 12px 0;">
+                  <a href="https://myaccount.ft.com/" target="_blank" style="text-decoration: none; font-weight: bold; font-size: 14px; font-family: arial, sans-serif; color: #3A70AF;"><span class="text-sans-serif a-text">Manage my account</span></a>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+      </table>
+      <!--[if gte mso 9]>
+      </td></tr></table>
+      <![endif]-->
+
+    </td>
+  </tr>
+</table>
