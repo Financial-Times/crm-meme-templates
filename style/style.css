@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  background: #FFF1E5; }
+
+.o-header__subbrand {
+  background: #990f3d;
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+  @media (max-width: 924px) {
+    .o-header__subbrand {
+      height: 31px; } }
+  .o-header__subbrand .o-header__subbrand-logo {
+    background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo:brand-myft?source=next&tint=%23FFF9F5,%23FFF9F5&format=svg);
+    width: 77px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    background-color: transparent;
+    vertical-align: baseline;
+    height: 39px;
+    margin: 21px 0;
+    vertical-align: middle; }
+    @media (max-width: 924px) {
+      .o-header__subbrand .o-header__subbrand-logo {
+        height: 32px;
+        margin: 0;
+        width: 36px; } }
+  .o-header__subbrand .myft-header__tour-link {
+    font-family: MetricWeb, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    border: 0;
+    color: #fff;
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: middle;
+    text-decoration: none;
+    margin-top: 8px; }
+    .o-header__subbrand .myft-header__tour-link:hover {
+      background-color: #fff1e5;
+      color: #4d4845; }
+    @media (max-width: 924px) {
+      .o-header__subbrand .myft-header__tour-link {
+        margin-top: 0; } }
+
+.confirmation {
+  text-align: center;
+  margin-top: 60px;
+  font-family: MetricWeb, sans-serif;
+  max-width: 500px;
+  margin: 60px auto 0; }
+  @media (max-width: 924px) {
+    .confirmation {
+      margin-top: 20px; } }
+  .confirmation img.confirmation-tick {
+    width: 100px;
+    margin-bottom: 10px; }
+  .confirmation h1 {
+    font-family: MetricWeb, sans-serif;
+    font-weight: 200;
+    line-height: 50px; }
+    .confirmation h1 .bold {
+      font-weight: 600; }
+  .confirmation p {
+    margin-bottom: 40px; }
+
+/*# sourceMappingURL=style.css.map */
