@@ -53,7 +53,519 @@
 	
 						<p class="o-typography-standfirst">First snippet</span></hp>
 						<div>
-							x
+							<!-- FT Full width email template -->
+<!-- Template created by CRM team and should be used for emails that use a full width hero area -->
+
+<!-- XHTML 1.0 Transitional doctype. Best for email: https://www.campaignmonitor.com/blog/email-marketing/2010/11/correct-doctype-to-use-in-html-email/-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+
+  <title>FT</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Fix DPI scaling in Outlook 2007-2013 -->
+  <!--[if gte mso 9]>
+    <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+  <![endif]-->
+
+  <!-- Client specific style fixes -->
+  <style type="text/css">
+    a {
+      text-decoration: none;
+    }
+    
+    div {
+      box-sizing: border-box;
+    }
+    /* iPhone and iPad: overrides the Minimum Font Size */
+    body,
+    table,
+    td,
+    a {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    /* iPhone and iPad: Remove Blue Links on Apple Devices */
+    .appleLink a { 
+      color:#222222 !important; text-decoration:none !important; 
+    }
+    /* iPhone and iPad: text changed to links by phones */
+    @media only screen {
+      a[href^="tel"],
+      a[href^="sms"] {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+    /* Outlook: removes extra spacing from table */
+    table,
+    td {
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+    /* Explorer: ensures images do not stretch when viewed online */
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+      
+    .two-column {
+      width: 50%;
+    }
+      
+  </style>
+
+  <!-- Responsive styles -->
+  <style type="text/css">
+    
+    @media screen and (max-width: 660px) {
+      .mobile-hide {
+        display:none!important; 
+        width:0px!important; 
+        height: 0px!important; 
+        overflow:hidden!important; 
+        line-height: 0px!important; 
+        font-size:0px!important;
+      }
+      
+      .show {
+        display:block!important; 
+        max-height: none !important; 
+        max-width:none !important; 
+        line-height: 1.5 !important;
+        width:100%!important; 
+        height:auto!important;
+      }
+      .responsive-table {
+        width: 100%!important;
+        min-height: auto!important;
+      }
+      .mobile-overlap {
+        height: 20px!important;
+      }
+
+      /* 
+      Padding classes:
+      All padding classes should begin with: 'p-' 
+      followed by where is will apply: 'trbl-'
+      followed by the amound of padding in px: '30'
+      example: 'p-trbl-30'
+      */
+      /* 0 padding */
+      .p-trbl-0 {
+        padding-top: 0!important;
+        padding-right: 0!important;
+        padding-bottom: 0!important;
+        padding-left: 0!important;
+      }
+
+      .p-t-0 {
+        padding-top: 0!important;
+      }
+
+      /* 20px padding */
+      .p-tb-20 {
+        padding-top: 20px!important;
+        padding-bottom: 20px!important;
+      }
+      .p-rl-20 {
+        padding-right: 20px!important;
+        padding-left: 20px!important;
+      }
+      .p-trbl-20 {
+        padding: 20px 20px 20px 20px!important;
+      }
+      /* 40px padding */
+      .p-tb-40 {
+        padding-top: 40px!important;
+        padding-bottom: 40px!important;
+      }
+      .p-rl-40 {
+        padding-right: 40px!important;
+        padding-left: 40px!important;
+      }
+      .p-trbl-40 {
+        padding: 40px 40px 40px 40px!important;
+      }
+      
+      .p-t-40 {
+        padding-top: 40px!important;
+      }
+      .p-b-40 {
+        padding-bottom: 40px!important;
+      }
+    }
+  </style>
+
+  <!-- include webfonts -->
+  <style type="text/css">
+    
+    @font-face {
+      src: url("https://build.origami.ft.com/v2/files/o-fonts-assets@1.3.0/FinancierDisplayWeb-Regular.woff?#iefix") format("woff");
+      font-family: FinancierDisplayWeb;
+      font-weight: 400;
+      font-style: normal
+    }
+    @font-face {
+      src: url("https://build.origami.ft.com/v2/files/o-fonts-assets@1.3.0/MetricWeb-Regular.woff?#iefix") format("woff");
+      font-family: MetricWebRegular;
+      font-weight: 400;
+      font-style: normal
+    }
+    @font-face {
+      src: url("https://build.origami.ft.com/v2/files/o-fonts-assets@1.3.0/MetricWeb-Semibold.woff?#iefix") format("woff");
+      font-family: MetricWebSemibold;
+      font-weight: 600;
+      font-style: normal
+    }
+  </style>
+
+  <!-- Webfont styles - should be inline with Origami o-typography -->
+  <style type="text/css">
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      /* Headline 1 */
+      .headline-1 {
+        font-family: MetricWebRegular, Arial, sans-serif;
+        font-size: 40px;
+      }
+      /* Headline 2 */
+      .headline-2 {
+        font-family: MetricWebRegular, Arial, sans-serif;
+        font-size: 32px;
+      }
+      /* Headline 3 */
+      .headline-3 {
+        font-family: MetricWebRegular, Arial, sans-serif;
+        font-size: 28px;
+      }
+      /* Headline 4 */
+      .headline-4 {
+        font-family: MetricWebRegular, Arial, sans-serif;
+        font-size: 24px;
+      }
+      /* Headline 5 */
+      .headline-5 {
+        font-family: MetricWebRegular, Arial, sans-serif;
+        font-size: 20px;
+      }
+      /* p text */
+      .p-text {
+        font-family: MetricWebRegular, Arial, sans-serif;
+        font-size: 16px;
+      }
+      /* p text bold */
+      .p-text-bold {
+        font-family: MetricWebSemibold, Arial, sans-serif;
+        font-size: 16px;
+      }
+    }
+  </style>
+
+  <!--'table display' method classed-->
+  <style type="text/css">
+    .td {
+      display: block;
+    }
+    .table {
+      display: table;
+        width: 100%;
+    }
+    @media screen and (min-width: 640px) {
+    .td {
+      display: table-cell;
+      }
+    }
+
+    [owa] .td {
+      display: table-cell;
+    }
+  </style>
+
+  <!-- Font fallback for clients that do no support webfonts -->
+  <!--[if mso]>
+    <style type="text/css">
+    .text-sans-serif {
+    font-family: Arial, sans-serif !important;
+    }
+    .text-serif {
+    font-family: Georgia, sans-serif !important;
+    }
+    </style>
+  <![endif]-->
+
+  <!-- List fix for Outlook 07-13 -->
+  <!--[if gte mso 9]>
+    <style>
+      li {
+          text-indent: -1em; /* Normalise space between bullets and text */
+      }
+    </style>
+  <![endif]-->
+
+  <!-- Elsewhere list styling for outlook -->
+  <!--[if gte mso 9]>
+  <style>
+    .elsewhere ul li {
+      color: #F2DFCE;
+      border-bottom: none;
+      Margin: 20px 0;
+    }
+    .elsewhere ul li.last {
+      Margin: 20px 0 0 0;
+    }
+  </style>
+  <![endif]-->
+
+  <!-- content for email specific css -->
+  <style type="text/css">
+    /* Email specific CSS desktop*/
+    <content name="extra css"></content>
+    /* Email specific CSS mobile */
+    @media screen and (max-width: 660px) {
+      <content name="extra css mobile"></content>
+    }
+  </style>
+</head>
+<body style="margin: 0 !important; padding: 0 !important;" class="body">
+  <!-- TRACKING -->
+  <table role="presentation" class="responsive-table" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <div align="center">
+          <!--MOVABLE INK TRACKING-->
+          <content name="movable ink tracking only"></content>
+          <!--MOVABLE INK TRACKING-->
+        </div>
+      </td>
+    </tr>
+  </table>
+  <!--END TRACKING -->
+  <!-- Hidden preheader text -->
+  <div style="display: none; font-size: 1px; color: #FFF1E0; line-height: 1px; font-family: sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+    <content name="preheader text only"></content>
+  </div>
+  <!-- FT logo area -->
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFF1E5">
+    <tr>
+      <td align="center" valign="top">
+        <!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0" width="640" align="center" role="presentation"><tr><td><![endif]-->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:640px;" role="presentation">
+          <tr>
+            <td align="left" valign="top" class="responsive-table p-rl-20" style="padding: 15px 0 15px 0; font-size:24px; line-height:30px; font-family:Georgia, 'Times New Roman', Times, serif;">
+              <a href="http://www.ft.com" target="_blank" style="text-decoration: none; color:#000000;">FINANCIAL TIMES</a>
+            </td>
+            <td align="right" valign="bottom" class="mobile-hide" style="padding: 20px 0 15px 0; font-family:Arial, Helvetica, sans-serif; font-size:9px; line-height:12px; color:#000000; text-align:right;">
+              To view online <a href="{{{emailPermalink}}}" target="_blank" style="color:#306f9f; text-decoration:none;"><span style="color:#306f9f;">click here</span></a>.
+            </td>
+          </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </table>
+  <!-- Full width hero -->
+  <div>
+    <content name="Full width hero"></content>
+  </div>
+  
+  <!-- Content area -->
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFF1E5">
+    <tr>
+      <td align="center" valign="top">
+        <!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0" width="640" align="center"><tr><td><![endif]-->
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:640px;" role="presentation" bgcolor="#ffffff">
+          <tr>
+            <td>
+
+              <div>
+                <content name="Hero"></content>
+              </div>
+
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:640px;" role="presentation" bgcolor="#ffffff">
+          <tr>
+            <td class="p-trbl-20" style="padding: 0 40px;">
+              <div> 
+                
+                <content name="Content area 1"></content>
+                <content name="Content area 2"></content>
+                <content name="Content area 3"></content>
+                <content name="Content area 4"></content>
+                <content name="Content area 5"></content>
+                <content name="Content area 6"></content>
+                <content name="Content area 7"></content>
+                <content name="Content area 8"></content>
+                <content name="Content area 9"></content>
+                <content name="Content area 10"></content>  
+                  
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:640px;" role="presentation" bgcolor="#ffffff">
+          <tr>
+            <td>
+
+            <div>
+              <content name="Content area with no padding"></content>
+            </div>
+
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:640px;" role="presentation" bgcolor="#ffffff">
+          <tr>
+            <td class="p-trbl-20 content-bottom" style="padding: 0 40px 40px;">
+              <div> 
+                
+                <content name="Content area 11"></content>
+                <content name="Content area 12"></content>
+                <content name="Content area 13"></content>
+                <content name="Content area 14"></content>
+                <content name="Content area 15"></content>
+                <content name="Content area 16"></content>
+                <content name="Content area 17"></content>
+                <content name="Content area 18"></content>
+                <content name="Content area 19"></content>
+                <content name="Content area 20"></content>  
+                  
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Social and app footer -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:640px;" bgcolor="#FFF7EF" role="presentation">
+          <tr>
+            <td style="padding: 20px 40px 40px 40px;" class="p-trbl-20 p-t-0">
+                
+              <!--[if (gte mso 9)|(IE)]>
+              <table cellspacing="0" cellpadding="0" border="0" width="560" align="center" role="presentation">
+              <tr>
+              <td>
+              <![endif]-->
+
+              <!-- Column One -->
+              <table class="responsive-table" role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" width="280">
+                <tr>
+                  <td align="left">
+
+                    <p style="font-family: arial, sans-serif; font-weight: bold; font-size: 12px; color: #000000; text-transform: uppercase; margin: 15px 0 20px 0;">On social media? We are too:</p>
+
+                    <a href="https://www.facebook.com/financialtimes/" target="_blank"><img border="0" src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/59cd0e80ccd96f001946d38f.png?source=ft-email-manual" alt="Like us on Facebook" style="display: inline-block;" width="50"></a>
+
+                    <a href="https://twitter.com/financialtimes?lang=en" target="_blank"><img border="0" src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/59cd0e90ccd96f001946d390.png?source=ft-email-manual" alt="Follow us on Twitter" style="display: inline-block;" width="50"></a>
+
+                    <a href="https://www.instagram.com/financialtimes/?hl=en" target="_blank"><img border="0" src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/59cd0e8512efcf0019d6946d.png?source=ft-email-manual" alt="Follow us on Instagram" style="display: inline-block;" width="50"></a>
+
+                    <a href="https://www.youtube.com/user/FinancialTimesVideos" target="_blank"><img border="0" src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/59cd0ec812efcf0019d69470.png?source=ft-email-manual" alt="Subscribe to our YouTube channel" style="display: inline-block;" width="50"></a>
+
+                    <a href="https://uk.linkedin.com/company/financial-times" target="_blank"><img border="0" src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/59cd0e8b12efcf0019d6946e.png?source=ft-email-manual" alt="Connect with us on LinkedIn" style="display: inline-block;" width="50"></a>
+
+                  </td>
+                </tr>
+              </table>
+
+              <!--[if (IE)|mso]>
+              </td>
+              <td>
+              <![endif]-->
+
+              
+              <!-- Column Two -->
+              <table class="responsive-table" role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" width="280">
+                <tr>
+                  <td align="left">
+                      
+                      <p style="font-family: arial, sans-serif; font-weight: bold; font-size: 12px; color: #000000; text-transform: uppercase; margin: 15px 0 20px 0;">Download our apps:</p>
+
+                      <a href="https://itunes.apple.com/app/apple-store/id1200842933?pt=246269&ct=CRM_footer&mt=8" target="_blank"><img border="0" src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/59a51f8b3419ea001840b8d8.png?source=ft-email-manual&width=260" alt="Download from the App Store" style="display: inline-block; margin-right: 10px;" width="130"></a>
+        
+                      <!--[if (IE)|mso]>
+                      &nbsp;&nbsp;
+                      <![endif]-->
+                      
+                      <a href="https://play.google.com/store/apps/details?id=com.ft.news&referrer=utm_source%3Dcrmfooter" target="_blank"><img border="0" src="https://www.ft.com/__origami/service/image/v2/images/raw/https://email-platform-ftcom-meme.s3.amazonaws.com/images/598b2a00f6bbb4001811a5a2.png?source=ft-email-manual&width=260" alt="Get it on Google Play" style="display: inline-block;" width="130"></a>
+
+                  </td>
+                </tr>
+              </table>
+                
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]--> 
+
+            </td>
+          </tr>
+        </table>
+
+        <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </table>
+  
+  <!-- Footer -->
+
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFF1E5">
+    <tr>
+      <td align="center" valign="top">
+
+        <div class="footer" style="width: 100%; max-width: 640px; margin: 0 auto; text-align: center; padding: 30px 0; font-size: 12px; line-height: 15px; font-family: arial, sans-serif;">
+
+          <!--[if (gte mso 9)|(IE)]>
+          <table cellspacing="0" cellpadding="0" border="0" width="640" align="center" role="presentation">
+            <tr>
+              <td style="padding: 30px 0 30px 0; text-align: center; font-size: 12px; line-height: 15px; font-family: arial, sans-serif">
+          <![endif]-->
+
+          <content name="Unsubscribe"></content>
+
+          <a href="http://help.ft.com/legal/ft-com-terms-and-conditions/#axzz4CCpGNKQ2" target="_blank" style=" color: #3A70AF; margin-left: 10px;">T&Cs</a>
+          <!--[if (gte mso 9)|(IE)]>&nbsp;&nbsp;<![endif]-->
+          <a href="http://help.ft.com/legal/financial-times-privacy-policy/#axzz4DXubRsdD" target="_blank" style=" color: #3A70AF; margin-left: 10px;">Privacy policy</a>
+          <!--[if (gte mso 9)|(IE)]>&nbsp;&nbsp;<![endif]-->
+          <a href="http://help.ft.com/help/contact-us/" target="_blank" style=" color: #3A70AF; margin-left: 10px;">Contact us</a>
+
+          <div class="table" style="font-family: georgia; padding-top: 15px;">
+
+          <p class="footer-text"><content name="Disclaimer text"></content></p>
+
+            <p class="footer-text">We use pixels in HTML emails (not in plain text emails) to tell us if the email is opened or links in it are clicked on. The pixel will be deleted if you delete the email. See our cookie policy for more information.</p>
+
+            <p class="footer-text">THE FINANCIAL TIMES LTD 2018</p>
+
+            <p class="footer-text">This email was sent by a company owned by Financial Times Group Limited (FT Group), registered office at Number One Southwark Bridge, London SE1 9HL. Registered in England and Wales with company number 879531.</p>
+
+          </div>
+
+          <!--[if (gte mso 9)|(IE)]>
+              </td>
+            </tr>
+          </table>
+          <![endif]--> 
+
+        </div>
+
+      </td>
+    </tr>
+  </table>
+  
+</body>
 		</div>
 
 						<a href="https://www.ft.com/" class="o-buttons o-buttons--primary o-buttons--big">Explore</a>
