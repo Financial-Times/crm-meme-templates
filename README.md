@@ -1,13 +1,13 @@
-#CRM templates and snippets for MeMe
+# CRM templates and snippets for MeMe
 
-##Snippets
+## Snippets
 1. All CRM snippets should have *crm_* as a prefix
 
 2. All CRM snippets should be compatible with the master-template.html
 
 3. All CRM snippets should begin within self contained tables. 
 
-##Coding conventions
+## Coding conventions
 1. Indentation should be 2 spaces
 
 2. All snippets must open with `<table style="table-layout: fixed; max-width:640px;" class="responsive-table" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">`
